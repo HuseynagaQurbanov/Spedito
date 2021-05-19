@@ -1,0 +1,12 @@
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.csprojAssemblyReference.cache
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.AssemblyInfoInputs.cache
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.AssemblyInfo.cs
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.csproj.CoreCompileInputs.cache
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.deps.json
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.runtimeconfig.json
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.runtimeconfig.dev.json
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.dll
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.pdb
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.dll
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.pdb
+C:\Users\SOFT\Desktop\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.genruntimeconfig.cache
