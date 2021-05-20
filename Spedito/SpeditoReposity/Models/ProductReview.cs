@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace SpeditoReposity.Models
 {
@@ -8,8 +6,16 @@ namespace SpeditoReposity.Models
     {
         public int ProductId { get; set; }
         public int UserId { get; set; }
+
+        [Required]
         public string Name { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string Email { get; set; }
+
+        [Required]
+        [MaxLength(500)]
         public string Review { get; set; }
         public User User { get; set; }
         public Product Product { get; set; }

@@ -2,10 +2,9 @@
 
 namespace SpeditoReposity.Models
 {
-    public class Category : BaseEntity
+   public class FoodCollection : BaseEntity
     {
-        [Required]
-        public int DepartmentId { get; set; }
+        public int OrderBy { get; set; }
 
         [Required]
         [MaxLength(50)]
@@ -13,7 +12,10 @@ namespace SpeditoReposity.Models
 
         [Required]
         [MaxLength(100)]
-        public string CoverImage { get; set; }
-        public Department Department { get; set; }
+        public string Icon { get; set; }
+
+        [Required]
+        [MaxLength(200)]
+        public string EndPoint { get; set; }
     }
 }
