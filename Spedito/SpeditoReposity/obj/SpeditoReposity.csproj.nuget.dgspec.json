@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {}
+    "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {
+    "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
         "projectName": "SpeditoReposity",
-        "projectPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
-        "packagesPath": "C:\\Users\\SOFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\obj\\",
+        "projectPath": "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,12 +41,6 @@
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.15, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.15, )"
             },
