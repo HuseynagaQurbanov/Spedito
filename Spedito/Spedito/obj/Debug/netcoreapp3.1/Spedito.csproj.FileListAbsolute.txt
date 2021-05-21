@@ -59,7 +59,6 @@ C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.TagH
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.TagHelpers.output.cache
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.RazorCoreGenerate.cache
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -112,3 +111,5 @@ C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\runtimes\win
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\SpeditoReposity.dll
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\SpeditoReposity.pdb
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
