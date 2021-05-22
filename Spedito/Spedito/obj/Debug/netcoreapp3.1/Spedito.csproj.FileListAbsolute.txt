@@ -111,5 +111,8 @@ C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\runtimes\win
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\SpeditoReposity.dll
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\SpeditoReposity.pdb
-C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Register\Index.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\PizzaBuilder\Index.cshtml.g.cs
