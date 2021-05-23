@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<!-- Mirrored from pro-theme.com/html/spedito/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 May 2021 00:47:25 GMT -->
 <head>
     <meta charset="utf-8">
     <title>@ViewData["Title"]</title>
@@ -12,7 +11,6 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="format-detection" content="telephone=no">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <link rel="shortcut icon" href="https://pro-theme.com/html/spedito/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="~/css/uikit.min.css">
     <link rel="stylesheet" href="~/css/main.css">
     <link id="dm-light" rel="stylesheet" href="~/css/light.css" disabled>
@@ -35,21 +33,25 @@
                         <div class="uk-navbar-left">
                             <button class="uk-button" type="button" data-target="#offcanvas" data-uk-toggle data-uk-icon="menu"></button>
                             <ul class="uk-navbar-nav">
-                                <li><a href="https://pro-theme.com/html/spedito/index.html">Home</a></li>
-                                <li><a href="https://pro-theme.com/html/spedito/page-catalog-sidebar.html">Order Online</a></li>
+                                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                                <li><a asp-controller="catalog" asp-action="index">Order Online</a></li>
                                 <li><a href="https://pro-theme.com/html/spedito/page-blog-article.html">Your Wishlist</a></li>
                             </ul>
                         </div>
                         <div class="uk-navbar-center">
                             <div class="logo">
-                                <div class="logo__box"><a class="logo__link" href="https://pro-theme.com/html/spedito/index.html"> <img class="logo__img logo__img--full" src="https://pro-theme.com/html/spedito/assets/img/logo.png" alt="logo"><img class="logo__img logo__img-small" src="https://pro-theme.com/html/spedito/assets/img/logo-small.png" alt="logo"></a></div>
+                                <div class="logo__box">
+                                    <a class="logo__link" asp-controller="home" asp-action="index">
+                                        <img class="logo__img logo__img--full" src="~/img/logo.png" alt="logo">
+                                        <img class="logo__img logo__img-small" src="~/img/logo-small.png" alt="logo">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="uk-navbar-right">
-                            <a class="uk-button" href="https://pro-theme.com/html/spedito/page-pizza-builder.html"> <span>Make Your Pizza</span><img class="uk-margin-small-left" src="https://pro-theme.com/html/spedito/assets/img/icons/pizza.png" alt="pizza"></a>
                             <ul class="uk-navbar-nav">
-                                <li><a href="https://pro-theme.com/html/spedito/page-catalog.html">Our Menu</a></li>
-                                <li><a href="https://pro-theme.com/html/spedito/page-blog.html">Latest News</a></li>
+                                <li><a asp-controller="catalog" asp-action="index">Our Menu</a></li>
+                                <li><a asp-controller="blog" asp-action="index">Latest News</a></li>
                                 <li><a href="https://pro-theme.com/html/spedito/page-contacts.html">Contact us</a></li>
                             </ul>
                         </div>
@@ -62,7 +64,7 @@
                         <div class="uk-navbar-left">
                             <div>
                                 <div class="block-with-phone">
-                                    <img src="https://pro-theme.com/html/spedito/assets/img/icons/delivery.svg" alt="delivery" data-uk-svg>
+                                    <img src="~/img/icons/delivery.svg" alt="delivery" data-uk-svg>
                                     <div> <span>For Delivery, Call us</span><a href="tel:13205448749">1-320-544-8749</a></div>
                                 </div>
                             </div>
@@ -74,7 +76,7 @@
                                     <li><a href="#modal-full" data-uk-toggle><span data-uk-icon="search"></span></a></li>
                                     <li><a href="#!"><span data-uk-icon="user"></span></a></li>
                                     <li><a href="https://pro-theme.com/html/spedito/page-cart.html"><span data-uk-icon="cart"></span></a></li>
-                                </ul><a class="uk-button" href="https://pro-theme.com/html/spedito/page-pizza-builder.html"> <span>Make Your Pizza</span><img class="uk-margin-small-left" src="https://pro-theme.com/html/spedito/assets/img/icons/pizza.png" alt="pizza"></a>
+                                </ul><a class="uk-button" asp-controller="pizzabuilder" asp-action="index"> <span>Make Your Pizza</span><img class="uk-margin-small-left" src="https://pro-theme.com/html/spedito/assets/img/icons/pizza.png" alt="pizza"></a>
                             </div>
                         </div>
                     </div>
@@ -88,7 +90,7 @@
             <div class="page-footer__top">
                 <div class="uk-container">
                     <div class="page-footer__logo">
-                        <div class="logo"> <a class="logo__link" href="https://pro-theme.com/html/spedito/index.html"><img class="logo__img" src="https://pro-theme.com/html/spedito/assets/img/logo-white.png" alt="logo"></a></div>
+                        <div class="logo"> <a class="logo__link" asp-controller="home" asp-action="index"><img class="logo__img" src="~/img/logo-white.png" alt="logo"></a></div>
                     </div>
                     <div class="page-footer__contacts">
                         <div class="contact-item-box">
@@ -109,12 +111,10 @@
             <div class="page-footer__middle">
                 <div class="uk-container">
                     <ul class="uk-navbar-nav">
-                        <li><a href="https://pro-theme.com/">Home</a></li>
-                        <li><a href="https://pro-theme.com/html/spedito/page-catalog-sidebar.html">Our Menu</a></li>
-                        <li><a href="#">Offers</a></li>
-                        <li><a href="https://pro-theme.com/html/spedito/page-404.html">404</a></li>
+                        <li><a asp-controller="home" asp-action="index">Home</a></li>
+                        <li><a asp-controller="catalog" asp-action="index">Our Menu</a></li>
                         <li><a href="https://pro-theme.com/html/spedito/page-wishlist.html">Wishlist</a></li>
-                        <li><a href="https://pro-theme.com/html/spedito/page-blog.html">News</a></li>
+                        <li><a asp-controller="blog" asp-action="index">News</a></li>
                         <li><a href="https://pro-theme.com/html/spedito/page-contacts.html">Contact</a></li>
                     </ul>
                 </div>
