@@ -118,3 +118,6 @@ C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\PizzaBuilder\Index.cshtml.g.cs
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Index.cshtml.g.cs
 C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Post.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Wishlist\Index.cshtml.g.cs
