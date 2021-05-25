@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Spedito.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

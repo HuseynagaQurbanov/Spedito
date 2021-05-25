@@ -19,15 +19,8 @@ using Spedito;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
-using Spedito.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74f5d6e95add2f74427f76ddd26f7913df37ceb2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5784d8d2b8ca8592dd22b775d54295f81b97f386", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

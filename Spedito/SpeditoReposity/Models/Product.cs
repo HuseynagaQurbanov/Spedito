@@ -24,7 +24,7 @@ namespace SpeditoReposity.Models
         [Required]
         public decimal Price { get; set; }
 
-        public Category Category { get; set; }
+        public Department Department { get; set; }
         public ICollection<ProductPhoto> Photos { get; set; }
         public ICollection<ProductReview> Reviews { get; set; }
         public ICollection<ProductOption> Options { get; set; }

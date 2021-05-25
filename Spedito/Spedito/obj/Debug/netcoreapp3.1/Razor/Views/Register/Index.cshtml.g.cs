@@ -19,15 +19,8 @@ using Spedito;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
-using Spedito.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d85638eb877d91f3b0e2cc698c7237bd61d1af4f", @"/Views/Register/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74f5d6e95add2f74427f76ddd26f7913df37ceb2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5784d8d2b8ca8592dd22b775d54295f81b97f386", @"/Views/_ViewImports.cshtml")]
     public class Views_Register_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "POST", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -77,7 +70,7 @@ using Spedito.Models;
                     <div class=""signup-form"">
                         <h2 class=""form-title"" style=""color: black"">Sign up</h2>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d85638eb877d91f3b0e2cc698c7237bd61d1af4f4767", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d85638eb877d91f3b0e2cc698c7237bd61d1af4f4594", async() => {
                 WriteLiteral(@"
                             <div class=""form-group"">
                                 <label for=""name""><i class=""zmdi zmdi-account material-icons-name""></i></label>

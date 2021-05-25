@@ -19,15 +19,8 @@ using Spedito;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
-using Spedito.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"701e956bb304e65344a25ede5a425c31db0ae462", @"/Views/Contact/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74f5d6e95add2f74427f76ddd26f7913df37ceb2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5784d8d2b8ca8592dd22b775d54295f81b97f386", @"/Views/_ViewImports.cshtml")]
     public class Views_Contact_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("#!"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -209,7 +202,7 @@ using Spedito.Models;
                 <div class=""uk-width-2-3@m"">
           ");
             WriteLiteral("          <div class=\"section-title burger wave\">\r\n                        <h3 class=\"uk-h3\">Send us a Message</h3>\r\n                    </div>\r\n                    <div class=\"section-content\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "701e956bb304e65344a25ede5a425c31db0ae46214774", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "701e956bb304e65344a25ede5a425c31db0ae46214601", async() => {
                 WriteLiteral(@"
                             <div class=""uk-grid uk-grid-medium uk-child-width-1-2@s"" data-uk-grid>
                                 <div><input class=""uk-input"" type=""text"" placeholder=""Your Name""></div>

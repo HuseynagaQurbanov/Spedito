@@ -19,15 +19,8 @@ using Spedito;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\Hp\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
-using Spedito.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9a8e2aa207f04dcce141eec7163d59f1d52184cb", @"/Views/Blog/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74f5d6e95add2f74427f76ddd26f7913df37ceb2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5784d8d2b8ca8592dd22b775d54295f81b97f386", @"/Views/_ViewImports.cshtml")]
     public class Views_Blog_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("uk-search uk-search-default"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -288,7 +281,7 @@ using Spedito.Models;
                     <aside class=""sidebar"">
                         <div class=""widjet widjet-search"">
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a8e2aa207f04dcce141eec7163d59f1d52184cb22826", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a8e2aa207f04dcce141eec7163d59f1d52184cb22653", async() => {
                 WriteLiteral("<button class=\"uk-search-icon-flip\" data-uk-search-icon type=\"submit\"></button><input class=\"uk-input uk-search-input uk-form-large\" type=\"search\" placeholder=\"Search blog ...\">");
             }
             );

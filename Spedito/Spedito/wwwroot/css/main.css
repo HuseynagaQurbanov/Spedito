@@ -5187,10 +5187,13 @@
     font-weight: 400;
     text-align: center;
   }
-  
-  @media (min-width: 767px) {
-    html,
-    body {
+
+.uk-transition-active{
+    z-index: 1;
+}
+
+@media (min-width: 767px) {
+    html, body {
       font-size: calc(14px + 1 * (100vw / 1920));
     }
   

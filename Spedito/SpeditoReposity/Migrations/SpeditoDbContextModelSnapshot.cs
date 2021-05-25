@@ -19,50 +19,6 @@ namespace SpeditoReposity.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SpeditoReposity.Models.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("AddedBy")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
-                    b.Property<DateTime>("AddedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CoverImage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)")
-                        .HasMaxLength(100);
-
-                    b.Property<int>("DepartmentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ModifiedBy")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DepartmentId");
-
-                    b.ToTable("Categories");
-                });
-
             modelBuilder.Entity("SpeditoReposity.Models.Department", b =>
                 {
                     b.Property<int>("Id")
@@ -161,6 +117,9 @@ namespace SpeditoReposity.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("DepartmentId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(500)")
@@ -190,7 +149,7 @@ namespace SpeditoReposity.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("DepartmentId");
 
                     b.ToTable("Products");
                 });
@@ -624,22 +583,11 @@ namespace SpeditoReposity.Migrations
                     b.ToTable("WishLists");
                 });
 
-            modelBuilder.Entity("SpeditoReposity.Models.Category", b =>
-                {
-                    b.HasOne("SpeditoReposity.Models.Department", "Department")
-                        .WithMany("Categories")
-                        .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("SpeditoReposity.Models.Product", b =>
                 {
-                    b.HasOne("SpeditoReposity.Models.Category", "Category")
+                    b.HasOne("SpeditoReposity.Models.Department", "Department")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DepartmentId");
                 });
 
             modelBuilder.Entity("SpeditoReposity.Models.ProductOption", b =>

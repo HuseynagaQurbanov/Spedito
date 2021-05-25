@@ -35,7 +35,7 @@
                             <ul class="uk-navbar-nav">
                                 <li><a asp-controller="home" asp-action="index">Home</a></li>
                                 <li><a asp-controller="catalog" asp-action="index">Order Online</a></li>
-                                <li><a href="https://pro-theme.com/html/spedito/page-blog-article.html">Your Wishlist</a></li>
+                                <li><a asp-controller="wishlist" asp-action="index">Your Wishlist</a></li>
                             </ul>
                         </div>
                         <div class="uk-navbar-center">
@@ -52,7 +52,7 @@
                             <ul class="uk-navbar-nav">
                                 <li><a asp-controller="catalog" asp-action="index">Our Menu</a></li>
                                 <li><a asp-controller="blog" asp-action="index">Latest News</a></li>
-                                <li><a href="https://pro-theme.com/html/spedito/page-contacts.html">Contact us</a></li>
+                                <li><a asp-controller="contact" asp-action="index">Contact us</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -64,7 +64,7 @@
                         <div class="uk-navbar-left">
                             <div>
                                 <div class="block-with-phone">
-                                    <img src="~/img/icons/delivery.svg" alt="delivery" data-uk-svg>
+                                    <i class="fas fa-truck" style="font-size: 34px"></i>
                                     <div> <span>For Delivery, Call us</span><a href="tel:13205448749">1-320-544-8749</a></div>
                                 </div>
                             </div>
@@ -113,9 +113,9 @@
                     <ul class="uk-navbar-nav">
                         <li><a asp-controller="home" asp-action="index">Home</a></li>
                         <li><a asp-controller="catalog" asp-action="index">Our Menu</a></li>
-                        <li><a href="https://pro-theme.com/html/spedito/page-wishlist.html">Wishlist</a></li>
+                        <li><a asp-controller="wishlist" asp-action="index">Wishlist</a></li>
                         <li><a asp-controller="blog" asp-action="index">News</a></li>
-                        <li><a href="https://pro-theme.com/html/spedito/page-contacts.html">Contact</a></li>
+                        <li><a asp-controller="contact" asp-action="index">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -185,7 +185,8 @@
                     <button class="uk-modal-close-full" type="button" data-uk-close></button>
                     <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus></form>
                 </div>
-            </div><button class="mode-toggler" id="mode-toggler"><span data-uk-icon="paint-bucket"></span></button>
+            </div>
+            <button class="mode-toggler" id="mode-toggler"><span data-uk-icon="paint-bucket"></span></button>
         </footer>
     </div>
     <script src="~/js/darkmode.min.js"></script>
@@ -194,6 +195,7 @@
     <script src="~/js/uikit-icons.min.js"></script>
     <script src="~/js/main.js" asp-append-version="true"></script>
     <script src="~/js/fontawesome.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/ffb574d7d8.js" crossorigin="anonymous"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

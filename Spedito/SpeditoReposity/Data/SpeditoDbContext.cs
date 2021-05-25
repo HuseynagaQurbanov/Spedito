@@ -10,7 +10,6 @@ namespace SpeditoReposity.Data
     {
         public SpeditoDbContext(DbContextOptions<SpeditoDbContext> options) :base(options) { }
 
-        public DbSet<Category> Categories { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<FoodCollection> FoodCollections { get; set; }
         public DbSet<Product> Products { get; set; }
