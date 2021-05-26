@@ -8636,19 +8636,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {}
+    "C:\\Users\\SOFT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
+      "projectUniqueName": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
       "projectName": "Spedito",
-      "projectPath": "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\Spedito\\obj\\",
+      "projectPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
+      "packagesPath": "C:\\Users\\SOFT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\Spedito\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8662,8 +8662,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {
-              "projectPath": "C:\\Users\\Hp\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj"
+            "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {
+              "projectPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj"
             }
           }
         }

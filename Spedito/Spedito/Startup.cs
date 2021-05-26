@@ -12,6 +12,7 @@ using SpeditoReposity.Data;
 using Microsoft.EntityFrameworkCore;
 using SpeditoReposity.Reposities.AuthReposities;
 using AutoMapper;
+using SpeditoReposity.Repositories.ContextRepositories;
 
 namespace Spedito
 {
@@ -35,6 +36,7 @@ namespace Spedito
                     options.UseSqlServer(Configuration.GetConnectionString("Default")));
 
             services.AddTransient<IAuthRepository, AuthRepository>();
+            services.AddTransient<IContentRepository, ContentRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
