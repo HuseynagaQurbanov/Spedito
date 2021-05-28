@@ -12,5 +12,7 @@ namespace SpeditoReposity.Repositories.ContextRepositories
         IEnumerable<FoodCollection> GetFoodCollections();
 
         IEnumerable<FirstScreenTitle> GetFirstScreenTitles();
+
+        IEnumerable<AboutUsSection> GetAboutUsSections();
     }
 }

@@ -24,5 +24,6 @@ namespace SpeditoReposity.Data
         public DbSet<WishList> WishLists { get; set; }
         public DbSet<SliderItem> SliderItems { get; set; }
         public DbSet<FirstScreenTitle> FirstScreenTitles { get; set; }
+        public DbSet<AboutUsSection> AboutUsSections { get; set; }
     }
 }

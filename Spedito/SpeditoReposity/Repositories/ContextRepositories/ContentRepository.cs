@@ -15,6 +15,12 @@ namespace SpeditoReposity.Repositories.ContextRepositories
             _context = context;
         }
 
+        public IEnumerable<AboutUsSection> GetAboutUsSections()
+        {
+            return _context.AboutUsSections.Where(s => s.Status)
+                                           .ToList();
+        }
+
         public IEnumerable<FirstScreenTitle> GetFirstScreenTitles()
         {
             return _context.FirstScreenTitles.Where(s => s.Status)

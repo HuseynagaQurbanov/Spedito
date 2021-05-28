@@ -15,7 +15,9 @@ namespace Spedito.Mapping
             CreateMap<SliderItem, SliderItemViewModel>();
             CreateMap<FoodCollection, FoodCollectionViewModel>();
             CreateMap<FirstScreenTitle, FirstScreenTitleViewModel>();
-            CreateMap<Product, ProductViewModel>();
+            CreateMap<Product, ProductViewModel>()
+                     .ForMember(d => d.Photos, opt => opt.MapFrom(src => src.Photos.OrderBy(p => p.OrderBy).Select(p => p.Image)));
+            CreateMap<AboutUsSection, AboutUsViewModel>();
         }
     }
 }

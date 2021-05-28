@@ -137,7 +137,7 @@
     width: 37px;
     height: 25px;
     margin-bottom: 8px;
-    background-image: url(../img/decor/burger.png);
+    background-image: url(../uploads/burger.png);
     content: '';
   }
   
@@ -2122,7 +2122,7 @@
   }
   
   .section-first-screen {
-    -webkit-mask-image: url(../img/decor/firstscreen.svg);
+    -webkit-mask-image: url(../img/firstscreen.svg);
     -webkit-mask-position: bottom center;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;

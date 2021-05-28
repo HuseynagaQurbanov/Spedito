@@ -1,0 +1,23 @@
+﻿@model IEnumerable<AboutUsViewModel>
+
+<div class="uk-grid uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+    @foreach (var item in Model)
+    {
+        <div class="uk-text-center">
+            <img src="~/uploads/@item.Image" alt="">
+        </div>
+        <div>
+            <div class="section-title burger wave">
+                <h3 class="uk-h3">@item.Title</h3>
+            </div>
+            <div class="section-content">
+                <p>@item.Description</p>
+                <div class="uk-margin-medium-top">
+                    <a class="uk-button" href="@item.EndPoint">
+                        <span>@item.ActionText</span>
+                    </a></div>
+            </div>
+        </div>
+    }
+
+</div>
