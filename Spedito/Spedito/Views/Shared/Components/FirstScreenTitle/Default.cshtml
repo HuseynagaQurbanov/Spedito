@@ -1,0 +1,11 @@
+﻿@model IEnumerable<FirstScreenTitleViewModel>
+
+<div class="first-screen__box">
+    @foreach (var item in Model)
+    {
+        <h2 class="first-screen__title">@item.Title</h2>
+        <p class="first-screen__desc">@item.Slogan</p>
+        <a class="uk-button" href="@item.EndPoint">@item.ActionText</a>
+    }
+
+</div> 

@@ -321,3 +321,6 @@ C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Register\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Wishlist\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Slider\Default.cshtml.g.cs
+C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Banner\Default.cshtml.g.cs
+C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\FirstScreenTitle\Default.cshtml.g.cs
+C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Recommended\Default.cshtml.g.cs

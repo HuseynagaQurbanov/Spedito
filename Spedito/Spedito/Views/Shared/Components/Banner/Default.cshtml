@@ -1,0 +1,21 @@
+﻿@model IEnumerable<FoodCollectionViewModel>
+
+<nav class="category-nav">
+    <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+        <ul class="uk-navbar-nav">
+            @foreach (var item in Model)
+            {
+                <li>
+                    <a href="@item.EndPoint">
+                        <div class="nav-item">
+                            <span class="nav-item__icon">
+                                <img src="uploads/@item.Icon" alt="burgers" data-uk-svg>
+                            </span>
+                            <span class="nav-item__text">@item.Name</span>
+                        </div>
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</nav>

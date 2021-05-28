@@ -13,6 +13,9 @@ namespace Spedito.Mapping
         public MappingProfile()
         {
             CreateMap<SliderItem, SliderItemViewModel>();
+            CreateMap<FoodCollection, FoodCollectionViewModel>();
+            CreateMap<FirstScreenTitle, FirstScreenTitleViewModel>();
+            CreateMap<Product, ProductViewModel>();
         }
     }
 }
