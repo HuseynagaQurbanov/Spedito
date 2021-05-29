@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\icon\" />
     <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 
