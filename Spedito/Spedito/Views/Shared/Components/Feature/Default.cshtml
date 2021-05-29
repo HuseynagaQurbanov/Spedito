@@ -1,0 +1,14 @@
+﻿@model IEnumerable<FeatureViewModel>
+
+    <div class="uk-grid uk-child-width-1-3@s" data-uk-grid>
+        @foreach(var item in Model)
+            {
+                <div>
+                    <div class="feature-item">
+                        <div class="feature-item__icon"><img src="~/uploads/@item.Image" alt="feature"></div>
+                        <div class="feature-item__title">@item.Title</div>
+                        <div class="feature-item__desc">@item.Description</div>
+                    </div>
+                </div>
+            }
+    </div>

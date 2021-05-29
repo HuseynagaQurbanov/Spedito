@@ -18,6 +18,8 @@ namespace Spedito.Mapping
             CreateMap<Product, ProductViewModel>()
                      .ForMember(d => d.Photos, opt => opt.MapFrom(src => src.Photos.OrderBy(p => p.OrderBy).Select(p => p.Image)));
             CreateMap<AboutUsSection, AboutUsViewModel>();
+            CreateMap<Feature, FeatureViewModel>();
+            CreateMap<Step, StepViewModel>();
         }
     }
 }

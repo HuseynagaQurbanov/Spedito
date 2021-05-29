@@ -21,6 +21,13 @@ namespace SpeditoReposity.Repositories.ContextRepositories
                                            .ToList();
         }
 
+        public IEnumerable<Feature> GetFeatures()
+        {
+            return _context.Features.Where(s => s.Status)
+                                    .OrderBy(s => s.OrderBy)
+                                    .ToList();
+        }
+
         public IEnumerable<FirstScreenTitle> GetFirstScreenTitles()
         {
             return _context.FirstScreenTitles.Where(s => s.Status)
@@ -37,6 +44,13 @@ namespace SpeditoReposity.Repositories.ContextRepositories
         public IEnumerable<SliderItem> GetSliderItems()
         {
             return _context.SliderItems.Where(s => s.Status)
+                                       .OrderBy(s => s.OrderBy)
+                                       .ToList();
+        }
+
+        public IEnumerable<Step> GetSteps()
+        {
+            return _context.Steps.Where(s => s.Status)
                                        .OrderBy(s => s.OrderBy)
                                        .ToList();
         }

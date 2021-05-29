@@ -14,5 +14,9 @@ namespace SpeditoReposity.Repositories.ContextRepositories
         IEnumerable<FirstScreenTitle> GetFirstScreenTitles();
 
         IEnumerable<AboutUsSection> GetAboutUsSections();
+
+        IEnumerable<Feature> GetFeatures();
+
+        IEnumerable<Step> GetSteps();
     }
 }
