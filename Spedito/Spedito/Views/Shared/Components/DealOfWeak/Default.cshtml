@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ProductViewModel>
+
+<div class="section-deal-of-the-week__box">
+    @foreach (var item in Model)
+    {
+        <div class="section-deal-of-the-week__content">
+            <div class="section-title">
+                <span>Deal of the Week</span>
+                <h3 class="uk-h3">@item.Name</h3>
+            </div>
+            <div class="section-content">
+                <p>@item.Description</p>
+                <div class="price-item"> <span>Per Serving </span><span class="value">@item.Price</span></div>
+                <div class="uk-margin-medium-top"><a class="uk-button" href="https://pro-theme.com/html/spedito/page-cart.html"><span>Add to Cart</span><img class="uk-margin-small-left" src="~/img/ice-cream.svg" alt=""></a></div>
+            </div>
+        </div>
+        <div class="section-deal-of-the-week__media"> <img src="uploads/@item.Photos.First()" alt="deal-of-the-week"></div>
+    }
+</div>

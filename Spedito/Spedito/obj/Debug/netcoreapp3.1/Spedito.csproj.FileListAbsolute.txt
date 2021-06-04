@@ -327,3 +327,4 @@ C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AboutUs\Default.cshtml.g.cs
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Feature\Default.cshtml.g.cs
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Step\Default.cshtml.g.cs
+C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\DealOfWeak\Default.cshtml.g.cs

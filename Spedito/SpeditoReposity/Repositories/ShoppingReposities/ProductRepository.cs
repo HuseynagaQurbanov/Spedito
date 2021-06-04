@@ -16,6 +16,14 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
             _context = context;
         }
 
+        public IEnumerable<Product> GetDealOfWeakProducts(int limit)
+        {
+            return _context.Products.Include("Photos")
+                                    .Where(p => p.Status)
+                                    .Take(limit)
+                                    .ToList();
+        }
+
         public IEnumerable<Product> GetRecommendedProduct(int limit)
         {
             return _context.Products.Include("Photos")

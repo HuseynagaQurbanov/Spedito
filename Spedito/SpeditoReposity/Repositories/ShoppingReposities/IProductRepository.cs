@@ -8,5 +8,7 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
     public interface IProductRepository
     {
         IEnumerable<Product> GetRecommendedProduct(int limit);
+
+        IEnumerable<Product> GetDealOfWeakProducts(int limit);
     }
 }
