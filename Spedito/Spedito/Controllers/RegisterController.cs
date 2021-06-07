@@ -26,6 +26,8 @@ namespace Spedito.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Register(RegisterViewModel register)
         {
             bool checkUser = _authRepository.CheckEmail(register.Email);

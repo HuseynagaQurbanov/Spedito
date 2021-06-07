@@ -15,6 +15,7 @@ using AutoMapper;
 using SpeditoReposity.Repositories.ContextRepositories;
 using SpeditoReposity.Repositories.ShoppingReposities;
 using Microsoft.AspNetCore.Http;
+using Spedito.Libs;
 
 namespace Spedito
 {
@@ -47,6 +48,10 @@ namespace Spedito
             services.AddTransient<IContentRepository, ContentRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IBasketRepository, BasketRepository>();
+
+            // inner libs
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<IAuth, Auth>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

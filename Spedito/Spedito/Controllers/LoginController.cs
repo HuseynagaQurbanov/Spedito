@@ -26,9 +26,44 @@ namespace Spedito.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Login(LoginViewModel login)
         {
-            return Ok();
+            if (ModelState.IsValid)
+            {
+                var user = _authRepository.Login(login.Email, login.Password);
+
+                if(user != null)
+                {
+                    user.Token = Guid.NewGuid().ToString();
+
+                    _authRepository.UpdateToken(user.Id, user.Token);
+
+                    Response.Cookies.Delete("token");
+
+                    Response.Cookies.Append("token", user.Token, new Microsoft.AspNetCore.Http.CookieOptions
+                    {
+                        HttpOnly = true,
+                        Expires = DateTime.Now.AddYears(1)
+                    });
+
+                    Request.Cookies.TryGetValue("token", out string token);
+
+                    _basketRepository.UpdateBasketsToken(token, user.Token);
+
+                    return RedirectToAction("index", "home");
+                }
+
+                ModelState.AddModelError("Login.Password", "Email or password is incorrect");
+            }
+
+            return View("~/Views/Register/Index.cshtml", new AccountViewModel
+            {
+                Login = login
+            });
         }
+
+        
     }
 }
