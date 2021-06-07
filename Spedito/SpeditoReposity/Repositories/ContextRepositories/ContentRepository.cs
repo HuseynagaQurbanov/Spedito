@@ -7,6 +7,21 @@ using System.Text;
 
 namespace SpeditoReposity.Repositories.ContextRepositories
 {
+    public interface IContentRepository
+    {
+        IEnumerable<SliderItem> GetSliderItems();
+
+        IEnumerable<FoodCategory> GetFoodCollections();
+
+        IEnumerable<FirstScreenTitle> GetFirstScreenTitles();
+
+        IEnumerable<AboutUsSection> GetAboutUsSections();
+
+        IEnumerable<Feature> GetFeatures();
+
+        IEnumerable<Step> GetSteps();
+    }
+
     public class ContentRepository : IContentRepository
     {
         private readonly SpeditoDbContext _context;
@@ -34,9 +49,9 @@ namespace SpeditoReposity.Repositories.ContextRepositories
                                              .ToList();
         }
 
-        public IEnumerable<FoodCollection> GetFoodCollections()
+        public IEnumerable<FoodCategory> GetFoodCollections()
         {
-            return _context.FoodCollections.Where(s => s.Status)
+            return _context.FoodCategories.Where(s => s.Status)
                                        .OrderBy(s => s.OrderBy)
                                        .ToList();
         }

@@ -8,6 +8,13 @@ using System.Text;
 
 namespace SpeditoReposity.Repositories.ShoppingReposities
 {
+    public interface IProductRepository
+    {
+        IEnumerable<Product> GetRecommendedProduct(int limit);
+
+        IEnumerable<Product> GetDealOfWeakProducts(int limit);
+    }
+
     public class ProductRepository : IProductRepository
     {
         private readonly SpeditoDbContext _context;

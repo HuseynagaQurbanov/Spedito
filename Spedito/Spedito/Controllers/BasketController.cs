@@ -3,10 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Spedito.Models;
 using SpeditoReposity.Models;
 using SpeditoReposity.Repositories.ShoppingReposities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Spedito.Controllers
 {

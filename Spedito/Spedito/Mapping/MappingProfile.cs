@@ -1,10 +1,7 @@
 ﻿using Spedito.Models;
 using AutoMapper;
 using SpeditoReposity.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Spedito.Models.Account;
 
 namespace Spedito.Mapping
@@ -14,7 +11,7 @@ namespace Spedito.Mapping
         public MappingProfile()
         {
             CreateMap<SliderItem, SliderItemViewModel>();
-            CreateMap<FoodCollection, FoodCollectionViewModel>();
+            CreateMap<FoodCategory, FoodCollectionViewModel>();
             CreateMap<FirstScreenTitle, FirstScreenTitleViewModel>();
             CreateMap<Product, ProductViewModel>()
                      .ForMember(d => d.Photos, opt => opt.MapFrom(src => src.Photos.OrderBy(p => p.OrderBy).Select(p => p.Image)));

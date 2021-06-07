@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Spedito.Models.Account;
-using SpeditoReposity.Models;
 using SpeditoReposity.Reposities.AuthReposities;
 using SpeditoReposity.Repositories.ShoppingReposities;
 using System;
@@ -21,18 +20,18 @@ namespace Spedito.Controllers
             _authRepository = authRepository;
             _basketRepository = basketRepository;
         }
-        public IActionResult Index()
+        public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login(LoginViewModel login)
+        public IActionResult Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = _authRepository.Login(login.Email, login.Password);
+                var user = _authRepository.Login(model.Email, model.Password);
 
                 if(user != null)
                 {
@@ -55,13 +54,10 @@ namespace Spedito.Controllers
                     return RedirectToAction("index", "home");
                 }
 
-                ModelState.AddModelError("Login.Password", "Email or password is incorrect");
+                ModelState.AddModelError("Password", "Email or password is incorrect");
             }
 
-            return View("~/Views/Register/Index.cshtml", new AccountViewModel
-            {
-                Login = login
-            });
+            return View(model);
         }
 
         

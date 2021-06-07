@@ -1,14 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using SpeditoReposity.Models;
 using SpeditoReposity.Reposities.AuthReposities;
 using SpeditoReposity.Repositories.ShoppingReposities;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Spedito.Controllers
 {

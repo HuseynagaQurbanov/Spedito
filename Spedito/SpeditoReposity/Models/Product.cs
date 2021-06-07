@@ -7,7 +7,7 @@ namespace SpeditoReposity.Models
     public class Product : BaseEntity
     {
         [Required]
-        public int CategoryId { get; set; }
+        public int FoodCategoryId { get; set; }
 
         [Required]
         [MaxLength(100)]
@@ -30,7 +30,6 @@ namespace SpeditoReposity.Models
         [Required]
         public bool IsDealOfWeek { get; set; }
 
-        public Department Department { get; set; }
         public ICollection<ProductPhoto> Photos { get; set; }
         public ICollection<ProductReview> Reviews { get; set; }
         public ICollection<ProductOption> Options { get; set; }

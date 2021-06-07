@@ -2,7 +2,7 @@
 
 namespace SpeditoReposity.Models
 {
-   public class FoodCollection : BaseEntity
+   public class FoodCategory : BaseEntity
     {
         public int OrderBy { get; set; }
 

@@ -21,16 +21,16 @@ namespace Spedito.Controllers
             _authRepository = authRepository;
             _basketRepository = basketRepository;
         }
-        public IActionResult Index()
+        public IActionResult Register()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Register(RegisterViewModel register)
+        public IActionResult Register(RegisterViewModel model)
         {
-            bool checkUser = _authRepository.CheckEmail(register.Email);
+            bool checkUser = _authRepository.CheckEmail(model.Email);
 
             if (checkUser)
             {
@@ -38,7 +38,7 @@ namespace Spedito.Controllers
             }
             if (ModelState.IsValid)
             {
-                var user = _mapper.Map<RegisterViewModel, User>(register);
+                var user = _mapper.Map<RegisterViewModel, User>(model);
                 user.Token = Guid.NewGuid().ToString();
                 user.Status = true;
                 _authRepository.Register(user);
@@ -58,10 +58,7 @@ namespace Spedito.Controllers
                 return RedirectToAction("index", "home");
             }
 
-            return View("~/Views/Register/Index.cshtml", new AccountViewModel 
-            { 
-                Register = register
-            });
+            return View(model);
         }
     }
 }
