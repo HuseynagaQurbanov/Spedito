@@ -12,5 +12,6 @@ namespace SpeditoReposity.Reposities.AuthReposities
         bool UserExsist(string email);
         User CheckByToken(string token);
         void UpdateToken(int id, string token);
+        bool CheckEmail(string email);
     }
 }

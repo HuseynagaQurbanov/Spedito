@@ -1,4 +1,4 @@
-﻿
+﻿@model  RegisterViewModel
 @{
     ViewData["Title"] = "Register";
 }
@@ -11,22 +11,30 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title" style="color: black">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form method="post" class="register-form" id="register-form" asp-action="register">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Fullname" />
+                                <input asp-for="Fullname" id="name" placeholder="Fullname" />
+                                <span asp-validation-for="Fullname" style="color:red"></span>
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="E-mail" />
+                                <input asp-for="Email" id="email" placeholder="E-mail" />
+                                <span asp-validation-for="Email" style="color:red"></span>
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                                <input asp-for="Password" id="pass" placeholder="Password" />
+                                <span asp-validation-for="Password" style="color:red"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input asp-for="PasswordConfirm" id="pass" placeholder="Confirm Password" />
+                                <span asp-validation-for="PasswordConfirm" style="color:red"></span>
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Sign Up" />
-                                <a href="#" class="signup-image-link">I am already member</a>
+                                <a asp-controller="login" asp-action="index" class="signup-image-link">I am already member</a>
                             </div>
                         </form>
                     </div>
@@ -36,3 +44,8 @@
         </section>
     </div>
 </main>
+
+@section Scripts{
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+ }

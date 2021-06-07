@@ -26,8 +26,15 @@ using Spedito.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
+using Spedito.Models.Account;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9a8e2aa207f04dcce141eec7163d59f1d52184cb", @"/Views/Blog/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7888f0e38ae3b9d426dadce3680a59dd794c255f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5f92e776abf991ef83d5f030b63dabd3c9a83a1e", @"/Views/_ViewImports.cshtml")]
     public class Views_Blog_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("uk-search uk-search-default"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -288,7 +295,7 @@ using Spedito.Models;
                     <aside class=""sidebar"">
                         <div class=""widjet widjet-search"">
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a8e2aa207f04dcce141eec7163d59f1d52184cb22834", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a8e2aa207f04dcce141eec7163d59f1d52184cb23017", async() => {
                 WriteLiteral("<button class=\"uk-search-icon-flip\" data-uk-search-icon type=\"submit\"></button><input class=\"uk-input uk-search-input uk-form-large\" type=\"search\" placeholder=\"Search blog ...\">");
             }
             );

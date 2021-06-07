@@ -20,6 +20,11 @@ namespace SpeditoReposity.Reposities.AuthReposities
             return _context.Users.FirstOrDefault(u => u.Token == token);
         }
 
+        public bool CheckEmail(string email)
+        {
+            return _context.Users.Any(u => u.Email == email);
+        }
+
         public User Login(string email, string password)
         {
             User user = _context.Users.FirstOrDefault(u => u.Email == email);

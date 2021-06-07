@@ -27,5 +27,6 @@ namespace SpeditoReposity.Data
         public DbSet<AboutUsSection> AboutUsSections { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<Step> Steps { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
     }
 }

@@ -48,6 +48,9 @@ jQuery(document).ready(function ($) {
     $('.js-checkbox').on('click', function () {
         $(this).toggleClass('is-checked');
     });
+
+    
+
 });
 var options = {
     light: "light.css",

@@ -26,8 +26,15 @@ using Spedito.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
+using Spedito.Models.Account;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c2a1f0b7dcd6f4374ca4f968109964d85e29d2ab", @"/Views/Shared/Components/Banner/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7888f0e38ae3b9d426dadce3680a59dd794c255f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5f92e776abf991ef83d5f030b63dabd3c9a83a1e", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Banner_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<FoodCollectionViewModel>>
     {
         #pragma warning disable 1998

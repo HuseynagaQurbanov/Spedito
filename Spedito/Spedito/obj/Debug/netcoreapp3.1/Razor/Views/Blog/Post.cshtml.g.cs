@@ -26,8 +26,15 @@ using Spedito.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
+using Spedito.Models.Account;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13051a779397164f5c53df0b5bdb2dba27707304", @"/Views/Blog/Post.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7888f0e38ae3b9d426dadce3680a59dd794c255f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5f92e776abf991ef83d5f030b63dabd3c9a83a1e", @"/Views/_ViewImports.cshtml")]
     public class Views_Blog_Post : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("#!"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -315,7 +322,7 @@ using Spedito.Models;
                                 <div class=""section-content"">
                                     <p>Your email address will not be published. Required fields are marked *</p>
                                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13051a779397164f5c53df0b5bdb2dba2770730425130", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13051a779397164f5c53df0b5bdb2dba2770730425313", async() => {
                 WriteLiteral(@"
                                         <div class=""uk-grid uk-grid-small uk-child-width-1-2@s"" data-uk-grid>
                                             <div class=""uk-width-1-1""><textarea class=""uk-textarea uk-form-large"" placeholder=""Message *""></textarea></div>

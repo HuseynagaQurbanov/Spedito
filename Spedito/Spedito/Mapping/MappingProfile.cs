@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Spedito.Models.Account;
 
 namespace Spedito.Mapping
 {
@@ -20,6 +21,7 @@ namespace Spedito.Mapping
             CreateMap<AboutUsSection, AboutUsViewModel>();
             CreateMap<Feature, FeatureViewModel>();
             CreateMap<Step, StepViewModel>();
+            CreateMap<RegisterViewModel, User>();
         }
     }
 }

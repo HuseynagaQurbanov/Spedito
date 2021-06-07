@@ -25,7 +25,11 @@
                                         <span class="value">$@item.Price</span>
                                     </div>
                                     <div class="product-card__addcart"> 
-                                        <a class="uk-button uk-button-default uk-width-1-1" href="https://pro-theme.com/html/spedito/page-product.html">Add to Cart
+                                        <a class="uk-button uk-button-default uk-width-1-1" 
+                                           asp-controller="products"
+                                           asp-action="index"
+                                           asp-route-id="@item.Id">
+                                            Add to Cart
                                             <span data-uk-icon="cart"></span>
                                         </a>
                                     </div>

@@ -26,8 +26,15 @@ using Spedito.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
+using Spedito.Models.Account;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f", @"/Views/Catalog/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7888f0e38ae3b9d426dadce3680a59dd794c255f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5f92e776abf991ef83d5f030b63dabd3c9a83a1e", @"/Views/_ViewImports.cshtml")]
     public class Views_Catalog_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "menu_order", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -216,7 +223,7 @@ using Spedito.Models;
                         <li data-uk-filter-control=""[data-tags='meat']""><a href=""#"">Meat</a></li>
                     </ul><select class=""uk-select"" name=""orderby"" aria-label=""Shop order"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f15811", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f15994", async() => {
                 WriteLiteral("Sorting by");
             }
             );
@@ -235,7 +242,7 @@ using Spedito.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f17310", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f17493", async() => {
                 WriteLiteral("Sort by popularity");
             }
             );
@@ -251,7 +258,7 @@ using Spedito.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f18506", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f18689", async() => {
                 WriteLiteral("Sort by average rating");
             }
             );
@@ -267,7 +274,7 @@ using Spedito.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f19706", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f19889", async() => {
                 WriteLiteral("Sort by latest");
             }
             );
@@ -283,7 +290,7 @@ using Spedito.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f20898", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f21081", async() => {
                 WriteLiteral("Sort by price: low to high");
             }
             );
@@ -299,7 +306,7 @@ using Spedito.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f22102", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3f9e8aee160ded82b6dd8d371f418da1f5a9d7f22285", async() => {
                 WriteLiteral("Sort by price: high to low");
             }
             );

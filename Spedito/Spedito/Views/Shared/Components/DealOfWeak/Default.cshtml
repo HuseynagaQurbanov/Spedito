@@ -11,7 +11,15 @@
             <div class="section-content">
                 <p>@item.Description</p>
                 <div class="price-item"> <span>Per Serving </span><span class="value">@item.Price</span></div>
-                <div class="uk-margin-medium-top"><a class="uk-button" href="https://pro-theme.com/html/spedito/page-cart.html"><span>Add to Cart</span><img class="uk-margin-small-left" src="~/img/ice-cream.svg" alt=""></a></div>
+                <div class="uk-margin-medium-top">
+                    <a class="uk-button" 
+                       asp-controller="products"
+                       asp-action="index"
+                       asp-route-id="@item.Id">
+                        <span>Add to Cart</span>
+                        <img class="uk-margin-small-left" src="~/img/ice-cream.svg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="section-deal-of-the-week__media"> <img src="uploads/@item.Photos.First()" alt="deal-of-the-week"></div>
