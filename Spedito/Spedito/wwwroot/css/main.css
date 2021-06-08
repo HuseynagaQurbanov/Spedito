@@ -2137,6 +2137,7 @@ body.dm-light .pan-loader .shadow {
 }
 
 .first-screen__bg {
+    background-image: url(../img/bg-first-screen.jpg);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: block;

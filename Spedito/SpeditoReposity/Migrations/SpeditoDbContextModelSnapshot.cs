@@ -254,7 +254,7 @@ namespace SpeditoReposity.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FoodCollections");
+                    b.ToTable("FoodCategories");
                 });
 
             modelBuilder.Entity("SpeditoReposity.Models.Product", b =>
@@ -283,6 +283,9 @@ namespace SpeditoReposity.Migrations
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsRecommended")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsSpecialDeal")
                         .HasColumnType("bit");
 
                     b.Property<string>("ModifiedBy")

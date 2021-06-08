@@ -329,3 +329,5 @@ C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
 C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Register\Register.cshtml.g.cs
+C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Product\_SingleProduct.cshtml.g.cs
+C:\Users\SOFT\Desktop\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\SpecialDeal\Default.cshtml.g.cs

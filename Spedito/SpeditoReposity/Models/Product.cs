@@ -30,6 +30,9 @@ namespace SpeditoReposity.Models
         [Required]
         public bool IsDealOfWeek { get; set; }
 
+        [Required]
+        public bool IsSpecialDeal { get; set; }
+
         public ICollection<ProductPhoto> Photos { get; set; }
         public ICollection<ProductReview> Reviews { get; set; }
         public ICollection<ProductOption> Options { get; set; }

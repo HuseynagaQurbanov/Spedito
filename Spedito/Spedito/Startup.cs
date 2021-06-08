@@ -48,6 +48,7 @@ namespace Spedito
             services.AddTransient<IContentRepository, ContentRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IBasketRepository, BasketRepository>();
+            services.AddTransient<ICatalogRepository, CatalogRepository>();
 
             // inner libs
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

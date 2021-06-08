@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20210607203549_FoodCollectionNameChanged.cs" />
     <Compile Remove="Migrations\20210607203549_FoodCollectionNameChanged.Designer.cs" />
+    <Compile Remove="Migrations\20210608074441_namechanged.cs" />
+    <Compile Remove="Migrations\20210608074441_namechanged.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<FoodCollectionViewModel>
+﻿@model IEnumerable<FoodCatalogViewModel>
 
 <nav class="category-nav">
     <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
@@ -6,10 +6,10 @@
             @foreach (var item in Model)
             {
                 <li>
-                    <a href="@item.EndPoint">
+                    <a asp-controller="catalog" asp-action="index" asp-route-id="@item.Id">
                         <div class="nav-item">
                             <span class="nav-item__icon">
-                                <img src="uploads/@item.Icon" alt="burgers" data-uk-svg>
+                                <img src="~/uploads/@item.Icon" alt="burgers" data-uk-svg>
                             </span>
                             <span class="nav-item__text">@item.Name</span>
                         </div>

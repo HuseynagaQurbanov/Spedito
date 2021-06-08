@@ -23,7 +23,7 @@ namespace Spedito.ViewComponents
         {
             var collections = _contentRepository.GetFoodCollections();
 
-            var model = _mapper.Map<IEnumerable<FoodCategory>, IEnumerable<FoodCollectionViewModel>>(collections);
+            var model = _mapper.Map<IEnumerable<FoodCategory>, IEnumerable<FoodCatalogViewModel>>(collections);
 
             return View(model);
         }
