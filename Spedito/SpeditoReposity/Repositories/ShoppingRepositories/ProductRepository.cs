@@ -17,6 +17,7 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
         IEnumerable<Product> GetDealOfWeakProducts(int limit);
 
         IEnumerable<Product> GetProductsByCatalogId(int catalogId, int take, int skip, ProductListing orderBy);
+        Product GetProductById(int id);
     }
 
     public class ProductRepository : IProductRepository
@@ -33,6 +34,13 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
                                     .Where(p => p.Status)
                                     .Take(limit)
                                     .ToList();
+        }
+
+        public Product GetProductById(int id)
+        {
+            return _context.Products
+                           .Include("Photos")
+                           .FirstOrDefault(p => p.Status && p.Id == id);
         }
 
         public IEnumerable<Product> GetProductsByCatalogId(int catalogId, int take, int skip, ProductListing orderBy)
