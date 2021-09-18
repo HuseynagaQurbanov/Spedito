@@ -19,6 +19,9 @@ namespace Spedito.Mapping
             CreateMap<Feature, FeatureViewModel>();
             CreateMap<Step, StepViewModel>();
             CreateMap<RegisterViewModel, User>();
+            CreateMap<ProductReview, ReviewViewModel>();
+            CreateMap<ProductOptionItem, OptionItemViewModel>();
+            CreateMap<ProductOption, OptionsViewModel>();
         }
     }
 }

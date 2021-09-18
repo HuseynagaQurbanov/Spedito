@@ -12,7 +12,7 @@
                 <vc:banner></vc:banner>
 
                 <div class="first-screen__box">
-                    <h2 class="first-screen__title">The Pizza</h2>
+                    <h2 style="text-transform:uppercase" class="first-screen__title">@Model.FoodCatalog.Name</h2>
                     <p class="first-screen__desc">Delicious & Tasty Pizzas By Expert Chefs</p>
                     <div class="first-screen__breadcrumb">
                         <ul class="uk-breadcrumb">
@@ -27,35 +27,20 @@
     <div class="page-content" style="margin-top: 150px">
         <div class="uk-container">
             <div data-uk-filter="target: .js-filter">
-                <div class="catalog-filter-row">
-                    <ul class="uk-subnav">
-                        <li data-uk-filter-control=""><a href="#">All</a></li>
-                        <li class="uk-active" data-uk-filter-control="[data-tags='spicy']"><a href="#">Spicy</a></li>
-                        <li data-uk-filter-control="[data-tags='chicken']"><a href="#">Chicken</a></li>
-                        <li data-uk-filter-control="[data-tags='veglovers']"><a href="#">Veg lovers</a></li>
-                        <li data-uk-filter-control="[data-tags='meat']"><a href="#">Meat</a></li>
-                    </ul>
-                    <select class="uk-select" asp-for="OrderBy" aria-label="Shop order">
-                        <option value="@ProductListing.Newness">Sort by latest</option>
-                        <option value="@ProductListing.PriceAsc">Sort by price: low to high</option>
-                        <option value="@ProductListing.PriceDesc-desc">Sort by price: high to low</option>
-                    </select>
-                </div>
                 <ul class="uk-slider-items uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" data-uk-grid>
-                    <li class="uk-first-column" style="width:25%; display:inline">
-
-                        @foreach (var item in Model.Products)
-                        {
+                    @foreach (var item in Model.Products)
+                    {
+                        <li class="uk-first-column" style="width:25%; display:inline">
                             <div class="product-item">
                                 <div class="product-item__box">
-                                    
+
                                     <partial name="Components/Product/_SingleProduct" model="item" />
 
                                 </div>
                             </div>
-                        }
+                        </li>
+                    }
 
-                    </li>
                 </ul>
                 <div class="uk-margin-medium-top uk-text-center"><button class="uk-button" type="button">Load more </button></div>
             </div>

@@ -18,6 +18,8 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
 
         IEnumerable<Product> GetProductsByCatalogId(int catalogId, int take, int skip, ProductListing orderBy);
         Product GetProductById(int id);
+        Product GetProductDetailsById(int id);
+        void CreateReview(ProductReview productReview);
     }
 
     public class ProductRepository : IProductRepository
@@ -26,6 +28,12 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
         public ProductRepository(SpeditoDbContext context)
         {
             _context = context;
+        }
+
+        public void CreateReview(ProductReview productReview)
+        {
+            _context.ProductReviews.Add(productReview);
+            _context.SaveChanges();
         }
 
         public IEnumerable<Product> GetDealOfWeakProducts(int limit)
@@ -38,8 +46,16 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
 
         public Product GetProductById(int id)
         {
+            return _context.Products.FirstOrDefault(p => p.Status && p.Id == id);
+        }
+
+        public Product GetProductDetailsById(int id)
+        {
             return _context.Products
                            .Include("Photos")
+                           .Include("Reviews")
+                           .Include("Options")
+                           .Include("Options.OptionItems")
                            .FirstOrDefault(p => p.Status && p.Id == id);
         }
 

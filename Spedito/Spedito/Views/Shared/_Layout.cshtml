@@ -36,7 +36,6 @@
                             <button class="uk-button" type="button" data-target="#offcanvas" data-uk-toggle data-uk-icon="menu"></button>
                             <ul class="uk-navbar-nav">
                                 <li><a asp-controller="home" asp-action="index">Home</a></li>
-                                <li><a asp-controller="catalog" asp-action="index">Order Online</a></li>
                                 <li><a asp-controller="wishlist" asp-action="index">Your Wishlist</a></li>
                             </ul>
                         </div>
@@ -52,7 +51,6 @@
                         </div>
                         <div class="uk-navbar-right">
                             <ul class="uk-navbar-nav">
-                                <li><a asp-controller="catalog" asp-action="index">Our Menu</a></li>
                                 <li><a asp-controller="blog" asp-action="index">Latest News</a></li>
                                 <li><a asp-controller="contact" asp-action="index">Contact us</a></li>
                             </ul>
@@ -92,10 +90,7 @@
 
 
                                     </li>
-                                    <li>
-                                        <a href="#modal-full" data-uk-toggle><span data-uk-icon="search"></span></a>
 
-                                    </li>
                                     <li><a asp-controller="basket" asp-action="index"><span data-uk-icon="cart"></span></a></li>
                                 </ul><a class="uk-button" asp-controller="pizzabuilder" asp-action="index"> <span>Make Your Pizza</span><img class="uk-margin-small-left" src="~/img/pizza.png" alt="pizza"></a>
                             </div>

@@ -8641,11 +8641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
+      "projectUniqueName": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
       "projectName": "Spedito",
-      "projectPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
+      "projectPath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\Spedito\\Spedito.csproj",
       "packagesPath": "C:\\Users\\SOFT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\Spedito\\obj\\",
+      "outputPath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\Spedito\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8662,8 +8662,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {
-              "projectPath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj"
+            "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj": {
+              "projectPath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj"
             }
           }
         }
@@ -8721,7 +8721,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

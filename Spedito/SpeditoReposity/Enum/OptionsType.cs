@@ -6,7 +6,7 @@ namespace SpeditoReposity.Models
 {
     public enum OptionsType
     {
-        select,
-        ingredientselect
+        thicknessSelect,
+        sizeSelect
     }
 }

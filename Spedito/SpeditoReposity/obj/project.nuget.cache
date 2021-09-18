@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8SOD4hRVNF7VvhyZKbsILDyKA58y2iuc2JasFphg4rH6BmBoIZn2ciurTqG0s5uPeB6UMqxFeVmVcbjAa/pEmg==",
+  "dgSpecHash": "+JEHPJpCytSB+Ift43PASlP5gwgPSDOJDo1qfNgVho8NSWnHRwWVR2TSgbG2USTawfgNMtI8dPtElrvX0lSz6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SOFT\\Desktop\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
+  "projectFilePath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SOFT\\.nuget\\packages\\cryptohelper\\3.0.2\\cryptohelper.3.0.2.nupkg.sha512",
     "C:\\Users\\SOFT\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.0.1\\microsoft.aspnetcore.cryptography.internal.2.0.1.nupkg.sha512",
