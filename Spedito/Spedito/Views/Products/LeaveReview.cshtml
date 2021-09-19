@@ -1,0 +1,33 @@
+﻿@model LeaveReviewViewModel
+@inject IAuth _auth
+@{
+    ViewData["Title"] = "AddReview";
+}
+
+
+<main class="page-main">
+    <div class="page-content">
+        <div class="uk-margin-large-top uk-container">
+            <div class="product-full-card">
+                <div class="product-full-card__tabs">
+                        <div class="section-title">
+                            <div class="uk-h2">Leave a Review for @ViewBag.ProductName</div>
+                        </div>
+                        <div class="section-content">
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <form method="post">
+                                <input asp-for="ProductId" type="hidden" value="@ViewBag.ProductId" />
+                                <div class="uk-grid uk-grid-small uk-child-width-1-2@s" data-uk-grid>
+                                    <div><input class="uk-input uk-form-large" asp-for="FullName" placeholder="Your Name *"></div>
+                                    <div><input class="uk-input uk-form-large" asp-for="Email" placeholder="Email *"></div>
+                                    <div class="uk-width-1-1"><textarea class="uk-textarea uk-form-large" asp-for="Review" placeholder="Reviews *"></textarea></div>
+                                    <div><button class="uk-button uk-button-large" type="submit">Post Review</button></div>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>

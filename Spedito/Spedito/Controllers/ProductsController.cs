@@ -41,13 +41,14 @@ namespace Spedito.Controllers
             if (product == null) return NotFound();
 
             ViewBag.ProductId = product.Id;
+            ViewBag.ProductName = product.Name;
 
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult LeaveReview(ProductViewModel model)
+        public IActionResult LeaveReview(LeaveReviewViewModel model)
         {
             if (_auth.User == null) return NotFound();
 
@@ -55,7 +56,7 @@ namespace Spedito.Controllers
             {
                 ProductReview productReview = new ProductReview
                 {
-                    Status = false,
+                    Status = true,
                     ProductId = model.ProductId,
                     UserId = _auth.User.Id,
                     Name = model.FullName,
@@ -65,7 +66,6 @@ namespace Spedito.Controllers
                     ModifiedDate = DateTime.Now,
                     AddedBy = _auth.User.FullName,
                     ModifiedBy = _auth.User.FullName
-
                 };
 
                 _productRepository.CreateReview(productReview);
@@ -76,10 +76,15 @@ namespace Spedito.Controllers
             if (product == null) return NotFound();
 
             ViewBag.ProductId = product.Id;
+            ViewBag.ProductName = product.Name;
 
-            return View(model);
+            return RedirectToAction("reviewposted");
         }
 
 
+        public IActionResult ReviewPosted()
+        {
+            return View();
+        }
     }
 }

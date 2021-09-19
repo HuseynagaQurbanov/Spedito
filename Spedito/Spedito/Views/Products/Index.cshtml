@@ -155,16 +155,18 @@
                                 else
                                 {
                                     <div class="section-content">
-                                        <p>Your email address will not be published. Required fields are marked *</p>
-                                        <form method="post" action="#!">
-                                            <input asp-for="ProductId" type="hidden" value="@ViewBag.ProductId" />
-                                            <div class="uk-grid uk-grid-small uk-child-width-1-2@s" data-uk-grid>
-                                                    <div><input class="uk-input uk-form-large" asp-for="FullName" placeholder="Your Name *"></div>
-                                                    <div><input class="uk-input uk-form-large" asp-for="Email" placeholder="Email *"></div>
-                                                    <div class="uk-width-1-1"><textarea class="uk-textarea uk-form-large" asp-for="Review" placeholder="Reviews *"></textarea></div>
-                                                    <div><button class="uk-button uk-button-large" type="submit">Post Review</button></div>
+                                        <div class="uk-grid uk-grid-small uk-child-width-1-2@s" data-uk-grid>
+                                            <div>
+                                                <button  class="uk-button uk-button-large" type="submit">
+                                                    <a asp-controller="products"
+                                                       asp-action="leavereview"
+                                                       asp-route-id="@Model.Id"
+                                                       style="text-decoration: none; color: white;">
+                                                        Leave Review
+                                                    </a>
+                                                </button>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 }
                             </div>

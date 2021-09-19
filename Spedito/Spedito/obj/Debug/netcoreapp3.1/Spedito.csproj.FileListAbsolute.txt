@@ -504,3 +504,5 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.pdb
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.genruntimeconfig.cache
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Products\LeaveReview.cshtml.g.cs
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Products\ReviewPosted.cshtml.g.cs
