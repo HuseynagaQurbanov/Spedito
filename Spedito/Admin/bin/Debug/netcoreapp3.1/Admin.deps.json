@@ -31,6 +31,8 @@
     ".NETCoreApp,Version=v3.1": {
       "Admin/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.1.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Microsoft.EntityFrameworkCore.Design": "3.1.15",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
           "Spedito": "1.0.0",

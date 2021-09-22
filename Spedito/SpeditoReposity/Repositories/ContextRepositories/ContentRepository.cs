@@ -52,8 +52,7 @@ namespace SpeditoReposity.Repositories.ContextRepositories
         public IEnumerable<FoodCategory> GetFoodCollections()
         {
             return _context.FoodCategories.Where(s => s.Status)
-                                       .OrderBy(s => s.OrderBy)
-                                       .ToList();
+                                          .ToList();
         }
 
         public IEnumerable<SliderItem> GetSliderItems()

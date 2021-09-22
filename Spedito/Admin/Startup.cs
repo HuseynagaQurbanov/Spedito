@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Spedito.Libs;
 using SpeditoReposity.Data;
 using SpeditoReposity.Repositories.AdminRepositories;
+using SpeditoReposity.Repositories.ShoppingReposities;
 
 namespace Admin
 {
@@ -36,6 +36,7 @@ namespace Admin
             services.AddDbContext<SpeditoDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("Default")));
 
+            services.AddTransient<ICatalogRepository, CatalogRepository>();
             services.AddTransient<IAdminRepository, AdminRepository>();
         }
 
@@ -63,7 +64,7 @@ namespace Admin
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Dashboard}/{action=Index}/{id?}");
             });
         }
     }
