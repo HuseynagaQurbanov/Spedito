@@ -10,6 +10,12 @@ namespace Spedito.Mapping
         {
             CreateMap<FoodCategory, CategoryViewModel>();
             CreateMap<CategoryViewModel, FoodCategory>();
+
+            CreateMap<Product, ProductViewModel>();
+            CreateMap<ProductViewModel, Product>();
+
+            CreateMap<ProductPhoto, ProductPhotoViewModel>();
+            CreateMap<ProductPhotoViewModel, ProductPhoto>();
         }
     }
 }

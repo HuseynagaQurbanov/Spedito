@@ -54,6 +54,10 @@
         "jquery-confirm.min.js",
         "jquery-confirm.min.css"
       ]
+    },
+    {
+      "library": "dropzone@5.9.3",
+      "destination": "wwwroot/lib/dropzone/"
     }
   ]
 }

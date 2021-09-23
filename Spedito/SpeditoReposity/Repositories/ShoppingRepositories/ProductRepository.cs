@@ -20,6 +20,8 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
         Product GetProductById(int id);
         Product GetProductDetailsById(int id);
         void CreateReview(ProductReview productReview);
+        IEnumerable<Product> GetProducts();
+        Product CreateProduct(Product product);
     }
 
     public class ProductRepository : IProductRepository
@@ -28,6 +30,16 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
         public ProductRepository(SpeditoDbContext context)
         {
             _context = context;
+        }
+
+        public Product CreateProduct(Product product)
+        {
+            product.AddedDate = DateTime.Now;
+
+            _context.Products.Add(product);
+            _context.SaveChanges();
+
+            return product;
         }
 
         public void CreateReview(ProductReview productReview)
@@ -57,6 +69,13 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
                            .Include("Options")
                            .Include("Options.OptionItems")
                            .FirstOrDefault(p => p.Status && p.Id == id);
+        }
+
+        public IEnumerable<Product> GetProducts()
+        {
+            return _context.Products.Include("Photos")
+                                    .ToList();
+
         }
 
         public IEnumerable<Product> GetProductsByCatalogId(int catalogId, int take, int skip, ProductListing orderBy)

@@ -506,3 +506,6 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.genruntimeconfig.cache
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Products\LeaveReview.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Products\ReviewPosted.cshtml.g.cs
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\Microsoft.Extensions.WebEncoders.dll
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll

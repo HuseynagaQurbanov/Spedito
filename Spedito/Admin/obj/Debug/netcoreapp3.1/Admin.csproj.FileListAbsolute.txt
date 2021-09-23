@@ -155,7 +155,8 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Category\Create.cshtml.g.cs
-C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Admin.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Category\Edit.cshtml.g.cs
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Spedito.Views.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Spedito.Views.pdb
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Spedito.deps.json
@@ -165,4 +166,8 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Admin.StaticWebAssets.xml
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Spedito.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Spedito.pdb
-C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Category\Edit.cshtml.g.cs
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Admin.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Product\Create.cshtml.g.cs
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Microsoft.Extensions.WebEncoders.dll
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll

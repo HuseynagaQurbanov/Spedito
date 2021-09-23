@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Admin.Libs;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using SpeditoReposity.Data;
 using SpeditoReposity.Repositories.AdminRepositories;
 using SpeditoReposity.Repositories.ShoppingReposities;
+using SpeditoReposity.Services;
 
 namespace Admin
 {
@@ -36,8 +38,11 @@ namespace Admin
             services.AddDbContext<SpeditoDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("Default")));
 
-            services.AddTransient<ICatalogRepository, CatalogRepository>();
             services.AddTransient<IAdminRepository, AdminRepository>();
+            services.AddTransient<ICatalogRepository, CatalogRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICloudinaryService, CloudinaryService>();
+            services.AddTransient<IFileManager, FileManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
