@@ -47,15 +47,8 @@ using Spedito.Libs;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 6 "C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
-using SpeditoReposity.Enum;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c553dee563261984ee3aca349d1057edf84bd848", @"/Views/Basket/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"079e9b0d9c2c880388c8e1de4cdb0024b9fe0b43", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6683956ace1150be5761480987334349baab5d94", @"/Views/_ViewImports.cshtml")]
     public class Views_Basket_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

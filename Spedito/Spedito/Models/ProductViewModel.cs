@@ -11,6 +11,5 @@ namespace Spedito.Models
         public IList<string> Photos { get; set; }
         public string Description { get; set; }
         public IList<ReviewViewModel> Reviews { get; set; }
-        public IList<OptionsViewModel> Options { get; set; }
     }
 }

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SpeditoReposity.Data;
 
 namespace SpeditoReposity.Migrations
 {
     [DbContext(typeof(SpeditoDbContext))]
-    partial class SpeditoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210924004355_FixedSomeFeatures")]
+    partial class FixedSomeFeatures
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -232,6 +234,11 @@ namespace SpeditoReposity.Migrations
                     b.Property<DateTime>("AddedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("EndPoint")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
@@ -353,6 +360,87 @@ namespace SpeditoReposity.Migrations
                     b.HasIndex("FoodCategoryId");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("SpeditoReposity.Models.ProductOption", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AddedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("AddedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductOptions");
+                });
+
+            modelBuilder.Entity("SpeditoReposity.Models.ProductOptionItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AddedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("AddedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<int>("ProductOptionId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductOptionId");
+
+                    b.ToTable("ProductOptionItems");
                 });
 
             modelBuilder.Entity("SpeditoReposity.Models.ProductPhoto", b =>
@@ -715,6 +803,24 @@ namespace SpeditoReposity.Migrations
                     b.HasOne("SpeditoReposity.Models.FoodCategory", "FoodCategory")
                         .WithMany()
                         .HasForeignKey("FoodCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SpeditoReposity.Models.ProductOption", b =>
+                {
+                    b.HasOne("SpeditoReposity.Models.Product", "Product")
+                        .WithMany("Options")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SpeditoReposity.Models.ProductOptionItem", b =>
+                {
+                    b.HasOne("SpeditoReposity.Models.ProductOption", "Option")
+                        .WithMany("OptionItems")
+                        .HasForeignKey("ProductOptionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

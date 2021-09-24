@@ -21,6 +21,5 @@ namespace SpeditoReposity.Models
         public string Token { get; set; }
 
         public ICollection<ProductReview> Reviews { get; set; }
-        public ICollection<WishList> WishList { get; set; }
     }
 }

@@ -47,15 +47,8 @@ using Spedito.Libs;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 6 "C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
-using SpeditoReposity.Enum;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"76d5e1e1b16d9d218bf60ec77c7477db9449d96f", @"/Views/Catalog/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"079e9b0d9c2c880388c8e1de4cdb0024b9fe0b43", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6683956ace1150be5761480987334349baab5d94", @"/Views/_ViewImports.cshtml")]
     public class Views_Catalog_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<FoodCatalogListViewModel>
     {
         private global::AspNetCore.Views_Catalog_Index.__Generated__BannerViewComponentTagHelper __BannerViewComponentTagHelper;
@@ -96,7 +89,7 @@ using SpeditoReposity.Enum;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<main class=\"page-main\">\r\n    <div class=\"section-first-screen\">\r\n        <div class=\"first-screen__bg\"></div>\r\n        <div class=\"first-screen__content\">\r\n            <div class=\"uk-container\">\r\n                \r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:banner", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76d5e1e1b16d9d218bf60ec77c7477db9449d96f5522", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:banner", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76d5e1e1b16d9d218bf60ec77c7477db9449d96f5328", async() => {
             }
             );
             __BannerViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Catalog_Index.__Generated__BannerViewComponentTagHelper>();
@@ -117,7 +110,7 @@ using SpeditoReposity.Enum;
 #line hidden
 #nullable disable
             WriteLiteral("</h2>\r\n                    <p class=\"first-screen__desc\">Delicious & Tasty Pizzas By Expert Chefs</p>\r\n                    <div class=\"first-screen__breadcrumb\">\r\n                        <ul class=\"uk-breadcrumb\">\r\n                            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76d5e1e1b16d9d218bf60ec77c7477db9449d96f7134", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76d5e1e1b16d9d218bf60ec77c7477db9449d96f6940", async() => {
                 WriteLiteral("HOME");
             }
             );
@@ -163,7 +156,7 @@ using SpeditoReposity.Enum;
 #line hidden
 #nullable disable
             WriteLiteral("                        <li class=\"uk-first-column\" style=\"width:25%; display:inline\">\r\n                            <div class=\"product-item\">\r\n                                <div class=\"product-item__box\">\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "76d5e1e1b16d9d218bf60ec77c7477db9449d96f9859", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "76d5e1e1b16d9d218bf60ec77c7477db9449d96f9665", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -40,8 +40,22 @@ using Admin.Models.Shopping;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\Views\_ViewImports.cshtml"
+using Admin.Filters;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\Views\_ViewImports.cshtml"
+using SpeditoReposity.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"921bdea80224693406504257d4421f8fcc848441", @"/Views/Category/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa8891791aadfa5fe59d12f93c381499e83d5e58", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"255410bad9fdb6125c852af2f173302fab14118a", @"/Views/_ViewImports.cshtml")]
     public class Views_Category_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<CategoryViewModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -94,7 +108,7 @@ using Admin.Models.Shopping;
     <div class=""card shadow mb-4"">
         <div class=""card-header py-3"">
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "921bdea80224693406504257d4421f8fcc8484416039", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "921bdea80224693406504257d4421f8fcc8484416420", async() => {
                 WriteLiteral("New category");
             }
             );
@@ -175,7 +189,7 @@ using Admin.Models.Shopping;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                                <td class=\"d-flex justify-content-center\">\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "921bdea80224693406504257d4421f8fcc8484419846", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "921bdea80224693406504257d4421f8fcc84844110227", async() => {
                 WriteLiteral("\r\n                                        <i class=\"fas fa-pencil-alt\"></i>\r\n                                    ");
             }
             );
@@ -207,7 +221,7 @@ using Admin.Models.Shopping;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "921bdea80224693406504257d4421f8fcc84844112295", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "921bdea80224693406504257d4421f8fcc84844112677", async() => {
                 WriteLiteral("\r\n                                        <i class=\"fas fa-trash\"></i>\r\n                                    ");
             }
             );

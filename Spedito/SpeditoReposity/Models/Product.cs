@@ -33,10 +33,9 @@ namespace SpeditoReposity.Models
         [Required]
         public bool IsSpecialDeal { get; set; }
 
+        public FoodCategory FoodCategory { get; set; }
         public ICollection<ProductPhoto> Photos { get; set; }
         public ICollection<ProductReview> Reviews { get; set; }
-        public ICollection<ProductOption> Options { get; set; }
-        public ICollection<WishList> WishList { get; set; }
         public ICollection<Basket> Baskets { get; set; }
 
     }

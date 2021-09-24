@@ -29,6 +29,5 @@ namespace Admin.Models.Shopping
         public int FoodCategoryId { get; set; }
 
         public IList<ProductPhotoViewModel> Photos { get; set; }
-
     }
 }

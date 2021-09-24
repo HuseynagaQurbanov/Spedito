@@ -47,15 +47,8 @@ using Spedito.Libs;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 6 "C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\Views\_ViewImports.cshtml"
-using SpeditoReposity.Enum;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"47a44bd05b633f19f859463c5f68aefd32ae12fd", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"079e9b0d9c2c880388c8e1de4cdb0024b9fe0b43", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6683956ace1150be5761480987334349baab5d94", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private global::AspNetCore.Views_Home_Index.__Generated__SliderViewComponentTagHelper __SliderViewComponentTagHelper;
@@ -111,7 +104,7 @@ using SpeditoReposity.Enum;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<main class=\"page-main\">\r\n    <div class=\"section-first-screen\">\r\n\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:slider", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd8474", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:slider", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd8280", async() => {
             }
             );
             __SliderViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__SliderViewComponentTagHelper>();
@@ -124,7 +117,7 @@ using SpeditoReposity.Enum;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n        <div class=\"first-screen__content\">\r\n            <div class=\"uk-container\">\r\n\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:banner", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd9483", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:banner", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd9289", async() => {
             }
             );
             __BannerViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__BannerViewComponentTagHelper>();
@@ -137,7 +130,7 @@ using SpeditoReposity.Enum;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                \r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:first-screen-title", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd10411", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:first-screen-title", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd10217", async() => {
             }
             );
             __FirstScreenTitleViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__FirstScreenTitleViewComponentTagHelper>();
@@ -150,7 +143,7 @@ using SpeditoReposity.Enum;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"section-about\">\r\n        <div class=\"uk-section uk-container\">\r\n            \r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:about-us", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd11520", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:about-us", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd11326", async() => {
             }
             );
             __AboutUsViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__AboutUsViewComponentTagHelper>();
@@ -163,7 +156,7 @@ using SpeditoReposity.Enum;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n        </div>\r\n    </div>\r\n    <div class=\"section-features\">\r\n        <div class=\"uk-section uk-container\">\r\n            \r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:feature", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd12573", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:feature", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd12379", async() => {
             }
             );
             __FeatureViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__FeatureViewComponentTagHelper>();
@@ -194,7 +187,7 @@ using SpeditoReposity.Enum;
                 </ul>
                 
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:special-deal", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd14313", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:special-deal", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd14119", async() => {
             }
             );
             __SpecialDealViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__SpecialDealViewComponentTagHelper>();
@@ -224,7 +217,7 @@ using SpeditoReposity.Enum;
                     <div class=""uk-grid"" data-uk-grid>
                         <div class=""uk-width-1-3@m"">
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "47a44bd05b633f19f859463c5f68aefd32ae12fd15896", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "47a44bd05b633f19f859463c5f68aefd32ae12fd15702", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -246,7 +239,7 @@ using SpeditoReposity.Enum;
                                     <div class=""uk-slider-container"">
                                         
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:step", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd17390", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:step", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd17196", async() => {
             }
             );
             __StepViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__StepViewComponentTagHelper>();
@@ -266,9 +259,9 @@ using SpeditoReposity.Enum;
                             </div>
                             <div class=""uk-margin-medium-top uk-text-center"">
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd18630", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd18436", async() => {
                 WriteLiteral("\r\n                                    <span>Create & Order Now!</span>\r\n                                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "47a44bd05b633f19f859463c5f68aefd32ae12fd18994", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "47a44bd05b633f19f859463c5f68aefd32ae12fd18800", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -316,7 +309,7 @@ using SpeditoReposity.Enum;
             <div class=""section-content"">
                 
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:recommended", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd21975", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:recommended", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd21781", async() => {
             }
             );
             __RecommendedViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__RecommendedViewComponentTagHelper>();
@@ -329,7 +322,7 @@ using SpeditoReposity.Enum;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"section-deal-of-the-week\">\r\n        <div class=\"uk-section uk-container\">\r\n            \r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:deal-of-weak", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd23073", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:deal-of-weak", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd22879", async() => {
             }
             );
             __DealOfWeakViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__DealOfWeakViewComponentTagHelper>();
@@ -404,7 +397,7 @@ using SpeditoReposity.Enum;
             </div>
             <div class=""s");
             WriteLiteral("ection-content\">\r\n                <div class=\"subscribe-form\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd28386", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a44bd05b633f19f859463c5f68aefd32ae12fd28192", async() => {
                 WriteLiteral("\r\n                        <div class=\"subscribe-form__box\"><input type=\"email\" placeholder=\"Enter your email address ...\"><input class=\"uk-button\" type=\"submit\" value=\"Subscribe Now!\"></div>\r\n                    ");
             }
             );

@@ -71,12 +71,73 @@ namespace Admin.Controllers
             return NotFound(model);
         }
 
+        public IActionResult Edit(int id)
+        {
+            var product = _productRepository.GetProductById(id);
+            if (product == null) return NotFound();
+
+            var model = _mapper.Map<Product, ProductViewModel>(product);
+
+            ViewBag.Categories = _catalogRepository.GetCategories();
+
+
+            return View(model);
+        }
+
         [HttpPost]
-        public IActionResult Upload(IFormFile file)
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(ProductViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var product = _mapper.Map<ProductViewModel, Product>(model);
+
+                var productToUpdate = _productRepository.GetProductById(model.Id);
+
+                if (productToUpdate == null) return NotFound();
+
+                product.ModifiedBy = _admin.Fullname;
+
+                _productRepository.UpdateProduct(productToUpdate, product);
+                
+                return RedirectToAction("index");
+            }
+
+            ViewBag.Categories = _catalogRepository.GetCategories();
+
+            return View(model);
+        }
+
+        public IActionResult Delete(int id)
+        {
+            Product product = _productRepository.GetProductById(id);
+
+            if (product == null) return NotFound();
+
+            _productRepository.DeleteProduct(product);
+
+            return RedirectToAction("index");
+        }
+
+        [HttpPost]
+        public IActionResult Upload(IFormFile file,int? productId,int? orderBy)
         {
             var filename = _fileManager.Upload(file);
             var publicId = _cloudinaryService.Store(filename);
             _fileManager.Delete(filename);
+
+            if (productId != null)
+            {
+                ProductPhoto productPhoto = new ProductPhoto
+                {
+                    AddedBy = _admin.Fullname,
+                    AddedDate = DateTime.Now,
+                    Image = publicId,
+                    ProductId = (int)productId,
+                    OrderBy = (int)orderBy
+                };
+                _productRepository.AddPhoto(productPhoto);
+            }
 
             return Ok(new { 
                 filename = publicId,
@@ -85,11 +146,16 @@ namespace Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Remove(string name)
+        public IActionResult Remove(string name, int? id)
         {
+            if (id != null)
+            {
+                _productRepository.RemovePhotoById((int)id);
+            }
             _cloudinaryService.Delete(name);
 
             return Ok(new { status = 200 });
         }
+        
     }
 }

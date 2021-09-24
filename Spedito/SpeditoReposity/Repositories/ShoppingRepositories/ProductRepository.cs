@@ -22,6 +22,10 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
         void CreateReview(ProductReview productReview);
         IEnumerable<Product> GetProducts();
         Product CreateProduct(Product product);
+        void RemovePhotoById(int id);
+        void AddPhoto(ProductPhoto productPhoto);
+        void UpdateProduct(Product productToUpdate, Product product);
+        void DeleteProduct(Product product);
     }
 
     public class ProductRepository : IProductRepository
@@ -30,6 +34,12 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
         public ProductRepository(SpeditoDbContext context)
         {
             _context = context;
+        }
+
+        public void AddPhoto(ProductPhoto productPhoto)
+        {
+            _context.ProductPhotos.Add(productPhoto);
+            _context.SaveChanges();
         }
 
         public Product CreateProduct(Product product)
@@ -48,6 +58,13 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
             _context.SaveChanges();
         }
 
+        public void DeleteProduct(Product product)
+        {
+            _context.Products.Remove(product);
+
+            _context.SaveChanges();
+        }
+
         public IEnumerable<Product> GetDealOfWeakProducts(int limit)
         {
             return _context.Products.Include("Photos")
@@ -58,7 +75,9 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
 
         public Product GetProductById(int id)
         {
-            return _context.Products.FirstOrDefault(p => p.Status && p.Id == id);
+            return _context.Products.Include("Photos")
+                                    .Include("FoodCategory")
+                                    .FirstOrDefault(p => p.Status && p.Id == id);
         }
 
         public Product GetProductDetailsById(int id)
@@ -66,8 +85,6 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
             return _context.Products
                            .Include("Photos")
                            .Include("Reviews")
-                           .Include("Options")
-                           .Include("Options.OptionItems")
                            .FirstOrDefault(p => p.Status && p.Id == id);
         }
 
@@ -117,6 +134,29 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
                                     .Where(p => p.IsSpecialDeal)
                                     .OrderByDescending(p => p.AddedDate)
                                     .ToList();
+        }
+
+        public void RemovePhotoById(int id)
+        {
+            ProductPhoto productPhoto = _context.ProductPhotos.Find(id);
+
+            _context.ProductPhotos.Remove(productPhoto);
+
+            _context.SaveChanges();
+        }
+
+        public void UpdateProduct(Product productToUpdate, Product product)
+        {
+            productToUpdate.Status = product.Status;
+            productToUpdate.Name = product.Name;
+            productToUpdate.Price = product.Price;
+            productToUpdate.Text = product.Text;
+            productToUpdate.Description = product.Description;
+            productToUpdate.FoodCategoryId = product.FoodCategoryId;
+            productToUpdate.ModifiedBy = product.ModifiedBy;
+            productToUpdate.ModifiedDate = DateTime.Now;
+
+            _context.SaveChanges();
         }
     }
 }

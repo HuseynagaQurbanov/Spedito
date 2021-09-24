@@ -474,13 +474,10 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.TagHelpers.output.cache
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.RazorCoreGenerate.cache
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs
-C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Index.cshtml.g.cs
-C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Post.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
-C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\PizzaBuilder\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Register\Register.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AboutUs\Default.cshtml.g.cs
@@ -494,7 +491,6 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\SpecialDeal\Default.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Step\Default.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Wishlist\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.RazorTargetAssemblyInfo.cache

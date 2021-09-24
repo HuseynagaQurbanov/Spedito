@@ -7,6 +7,8 @@ namespace Admin.Models.Shopping
 {
     public class ProductPhotoViewModel
     {
+        public int Id { get; set; }
+
         public int OrderBy { get; set; }
 
         public int ProductId { get; set; }

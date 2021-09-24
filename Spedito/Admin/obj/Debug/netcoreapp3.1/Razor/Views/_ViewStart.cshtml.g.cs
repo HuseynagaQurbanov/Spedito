@@ -40,8 +40,22 @@ using Admin.Models.Shopping;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\Views\_ViewImports.cshtml"
+using Admin.Filters;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\Views\_ViewImports.cshtml"
+using SpeditoReposity.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa8891791aadfa5fe59d12f93c381499e83d5e58", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"255410bad9fdb6125c852af2f173302fab14118a", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

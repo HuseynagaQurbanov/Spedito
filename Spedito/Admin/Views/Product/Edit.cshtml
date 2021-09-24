@@ -1,14 +1,14 @@
 ﻿@model ProductViewModel
-
+@inject ICloudinaryService _cloudinaryService
 @{
-    ViewData["Title"] = "Create product";
+    ViewData["Title"] = "Edit product";
 }
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">New Product</h1>
+    <h1 class="h3 mb-2 text-gray-800">Edit Product</h1>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -65,15 +65,25 @@
                 <div class="form-group gallery">
                     <label for="files" type="button" id="uploader" class="btn btn-secondary">Choose Photo</label>
                     <input type="file" name="files" id="files" multiple="" class="d-none" accept="image/*">
-                    <div class="photos"></div>
+                    <div class="photos">
+                        @for (int i = 0; i < Model.Photos.Count; i++)
+                        {
+                            <div class="item">
+                                <input type="hidden" value="@i" name="Photos[@i].OrderBy" />
+                                <input type="hidden" asp-for="Photos[i].Image"/>
+                                <img src="@_cloudinaryService.BuildUrl(Model.Photos[i].Image)" />
+                                <a href="#" data-name="@Model.Photos[i].Image" data-Id="@Model.Photos[i].Id" class="remove"><i class="fa fa-trash"></i></a>
+                            </div>
+                        }
+                    </div>
                 </div>
 
                 <div class="form-group d-flex justify-content-end mt-3">
                     <button type="submit" class="btn btn-primary btn-icon-split">
                         <span class="icon text-white-50">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-pencil-alt"></i>
                         </span>
-                        <span class="text">Add</span>
+                        <span class="text">Update</span>
                     </button>
                 </div>
             </form>
@@ -93,6 +103,9 @@
                     for (var i = 0; i < this.files.length; i++) {
                         var formData = new FormData();
                         formData.append('file', this.files[i]);
+                        formData.append('productId',@Model.Id)
+                        formData.append('orderBy',$(".photos .item").length + 1)
+
                         $.ajax({
                             url: '/product/upload',
                             type: 'POST',
@@ -118,7 +131,8 @@
                     $.ajax({
                         url: '/product/remove',
                         data: {
-                            name: $(this).data("name")
+                            name: $(this).data("name"),
+                            id: $(this).data("id")
                         },
                         type: "post",
                         dataType: "json",

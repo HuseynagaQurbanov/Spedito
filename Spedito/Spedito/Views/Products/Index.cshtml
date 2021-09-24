@@ -35,7 +35,7 @@
                                     <ul class="uk-slideshow-items uk-child-width-1-1">
                                         @foreach (var item in Model.Photos)
                                         {
-                                            <li class="uk-flex uk-flex-center uk-flex-middle"><img src="~/uploads/@item" alt="pizza-big"></li>
+                                            <li class="uk-flex uk-flex-center uk-flex-middle"><img src="https://res.cloudinary.com/dkuqiqad9/v1/@item" alt="pizza-big"></li>
                                         }
                                     </ul>
                                     <div class="product-full-card__whish"><i class="fas fa-heart"></i></div>
@@ -46,7 +46,7 @@
                                     <ul class="uk-thumbnav uk-slider-items uk-grid uk-grid-small uk-child-width-1-3 uk-child-width-1-4@l">
                                         @foreach (var item in Model.Photos)
                                         {
-                                            <li data-uk-slideshow-item="0"><a href="#"><img src="~/uploads/@item" alt="pizza-big"></a></li>
+                                            <li data-uk-slideshow-item="0"><a href="#"><img src="https://res.cloudinary.com/dkuqiqad9/v1/@item" alt="pizza-big"></a></li>
                                             
                                         }
                                         </ul>
@@ -59,33 +59,7 @@
                             <div class="product-full-card__not-active">
                                 <div class="product-full-card__title">@Model.Name</div>
                                 <div class="product-full-card__desc">@Model.Description</div>
-                                <div class="product-full-card__select">
-                                    @foreach (var option in Model.Options)
-                                    {
-                                        if (option.Type == SpeditoReposity.Models.OptionsType.thicknessSelect)
-                                        {
-                                            <div class="select-box select-box--thickness">
-                                                <ul>
-                                                    @foreach (var optionItem in option.OptionItems)
-                                                    {
-                                                        <li><label><input type="radio" name="thickness"><span>@optionItem.Value</span></label></li>
-                                                    }
-                                                </ul>
-                                            </div>
-                                        }
-                                        else if (option.Type == SpeditoReposity.Models.OptionsType.sizeSelect)
-                                        {
-                                            <div class="select-box select-box--size">
-                                                <ul>
-                                                    @foreach (var optionItem in option.OptionItems)
-                                                    {
-                                                        <li><label><input type="radio" name="size"><span>@optionItem.Value</span></label></li>
-                                                    }
-                                                </ul>
-                                            </div>
-                                        }
-                                    }
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="product-full-card__info" style="margin-top:30px">

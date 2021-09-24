@@ -41,6 +41,8 @@ namespace Admin
             services.AddTransient<IAdminRepository, AdminRepository>();
             services.AddTransient<ICatalogRepository, CatalogRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+
+
             services.AddTransient<ICloudinaryService, CloudinaryService>();
             services.AddTransient<IFileManager, FileManager>();
         }

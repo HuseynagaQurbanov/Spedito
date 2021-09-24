@@ -171,3 +171,4 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\Microsoft.Extensions.WebEncoders.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Product\Edit.cshtml.g.cs
