@@ -1708,9 +1708,8 @@ body.dm-light .pan-loader .shadow {
         height: 100%;
     }
 
-        .product-item__media .uk-inline-clip a {
-            width: 80%;
-            padding-left: 30px;
+        .product-item__media .uk-inline-clip img {
+            width: 100%;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             -webkit-box-align: center;
@@ -1720,7 +1719,7 @@ body.dm-light .pan-loader .shadow {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 95%;
+            height: 100%;
         }
 
     .product-item__media .uk-position-center .uk-icon {
@@ -2358,7 +2357,7 @@ body.dm-light .pan-loader .shadow {
 }
 
 .section-special-deals .section-content {
-    min-height: 877px;
+    min-height: 700px;
 }
 
 .section-special-deals .uk-subnav {
@@ -2632,7 +2631,7 @@ body.dm-light .pan-loader .shadow {
         position: absolute;
         top: 50%;
         right: 50%;
-        width: 100%;
+        width: 77%;
         min-width: 527px;
         min-width: 27.44792vw;
         transform: translate(45%, -45%);

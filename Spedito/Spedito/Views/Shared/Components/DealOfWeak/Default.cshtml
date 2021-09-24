@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<ProductViewModel>
 
-<div class="section-deal-of-the-week__box">
+<div class="section-deal-of-the-week__box ">
     @foreach (var item in Model)
     {
         <div class="section-deal-of-the-week__content">
@@ -22,6 +22,6 @@
                 </div>
             </div>
         </div>
-        <div class="section-deal-of-the-week__media"> <img src="uploads/@item.Photos.First()" alt="deal-of-the-week"></div>
+        <div class="section-deal-of-the-week__media"> <img src="https://res.cloudinary.com/dkuqiqad9/v1/@item.Photos.First()" alt="deal-of-the-week"></div>
     }
 </div>

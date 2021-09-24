@@ -5,27 +5,11 @@
                     <div class="product-item__not-active">
                         <div class="product-item__media">
                             <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox">
-                                <a href="https://res.cloudinary.com/dkuqiqad9/v1/@Model.Photos.FirstOrDefault()">
                                     <img src="https://res.cloudinary.com/dkuqiqad9/v1/@Model.Photos.FirstOrDefault()" alt="Creamy Melt Pizza" />
-                                    <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary"></div>
-                                    <div class="uk-position-center"><span class="uk-transition-fade" data-uk-icon="icon: search;"></span></div>
-                                </a>
                             </div>
-                            <div class="product-item__whish"><i class="fas fa-heart"></i></div>
-                            <div class="product-item__type spicy"></div>
-                            <div class="product-item__tooltip" data-uk-tooltip="title: spicy pizza; pos: bottom-right"><i class="fas fa-info-circle"></i></div>
                         </div>
-                        <div class="product-item__title"><a asp-controller="product" asp-action="index" asp-route-id="@Model.Id">@Model.Name</a></div>
+                        <div class="product-item__title"><a asp-controller="products" asp-action="index" asp-route-id="@Model.Id">@Model.Name</a></div>
                         <div class="product-item__desc">@Model.Description</div>
-                        <div class="product-item__select">
-                            <div class="select-box select-box--thickness">
-                                <ul>
-                                    <li><label><input type="radio" name="thickness-1" checked="checked" /><span>Thin</span></label></li>
-                                    <li><label><input type="radio" name="thickness-1" /><span>Normal</span></label></li>
-                                    <li><label><input type="radio" name="thickness-1" /><span>Thick</span></label></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="product-item__info">
