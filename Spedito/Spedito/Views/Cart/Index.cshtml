@@ -1,0 +1,127 @@
+﻿@model IEnumerable<BasketViewModel>
+
+@{
+    ViewData["Title"] = "Cart";
+    decimal total = 0M;
+}
+
+
+<main class="page-main">
+    <div class="section-first-screen">
+        <div class="first-screen__bg"></div>
+        <div class="first-screen__content">
+            <div class="uk-container">
+
+                <vc:banner></vc:banner>
+
+                <div class="first-screen__box">
+                    <h2 class="first-screen__title">Cart Details</h2>
+                    <div class="first-screen__breadcrumb">
+                        <ul class="uk-breadcrumb">
+                            <li><a asp-controller="home" asp-action="index">Home</a></li>
+                            <li> <span>My Cart</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dolu -->
+    <!-- Shopping cart table -->
+    @if (Model != null)
+    {
+        <div class="container px-3 my-5 clearfix" style="background: #211e1e;">
+            <div class="card" style="background-color: #211e1e;">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered m-0">
+                            <thead>
+                                <tr style="color:white">
+                                    <!-- Set columns width -->
+                                    <th class="text-center py-3 px-4" style="min-width: 400px;">Product Name &amp; Details</th>
+                                    <th class="text-right py-3 px-4" style="width: 100px;">Price</th>
+                                    <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title="" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    decimal price = item.Product.Price;
+                                    total += (price * item.Count);
+                                    <tr>
+                                        <td class="p-4" style="display: flex;">
+                                            <div class="media align-items-center">
+                                                <img src="https://res.cloudinary.com/dkuqiqad9/v1/@item.Product.Photos[0]" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                                            </div>
+                                            <div class="media align-items-center">
+                                                <div class="media-body">
+                                                    <a asp-controller="products" asp-action="index" asp-route-id="@item.Product.Id" class="d-block text-dark" style="color:white">@item.Product.Name x @item.Count</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-right font-weight-semibold align-middle p-4" style="color: white">$ @total.ToString("#.##")</td>
+                                        <td class="text-center align-middle px-0"><a asp-controller="cart" asp-action="remove" asp-route-id="@item.Id" class="shop-tooltip close float-none text-danger remove-basket-item" title="" data-original-title="Remove" style="color: white;">×</a></td>
+                                    </tr>
+                                }
+
+
+
+
+                            </tbody>
+                        </table>
+                        <div class="float-right" style="margin-top: 10px">
+                            <a class="uk-button" asp-controller="home" asp-action="index">Return to Shop</a>
+                            <a class="uk-button" href="#">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- / Shopping cart table -->
+
+
+
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="page-content">
+            <div class="uk-margin-large-top uk-container uk-container-small">
+                <img class="page-cart__img" src="~/img/img-cart.png" alt="">
+                <div class="page-cart__box">
+                    <div class="page-cart__title">Your cart is currently empty.</div><a class="uk-button" href="page-catalog.html">Return to Shop</a>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+
+
+    <div class="section-recommend-products">
+        <div class="uk-section uk-container">
+            <div class="section-title section-title--center wave burger">
+                <h3 class="uk-h3">You May Like To Order</h3>
+            </div>
+            <div class="section-content">
+                <ul class="uk-subnav uk-flex-center" data-uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium; swiping: false; active: 0">
+                    <li style="display:none"><a href="#">Burgers</a></li>
+                    <li style="display:none"><a href="#">Pizzas</a></li>
+                    <li style="display:none"><a href="#">Noodles</a></li>
+                    <li style="display:none"><a href="#">Drinks</a></li>
+                    <li style="display:none"><a href="#">Salads</a></li>
+                </ul>
+
+                <vc:special-deal></vc:special-deal>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Head{
+    <!-- SPECIFIC CSS -->
+    <link href="~/css/cart.css" rel="stylesheet">
+}

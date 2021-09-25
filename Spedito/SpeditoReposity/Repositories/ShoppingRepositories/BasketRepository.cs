@@ -15,6 +15,8 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
         Basket GetBasketByProductAndToken(int productId, string token);
         void ChangeCount(Basket basketItem, int count);
         void UpdateBasketsToken(string guestToken, string userToken);
+        Basket GetBasketById(int id);
+        void RemoveBasket(Basket basket);
     }
 
     public class BasketRepository : IBasketRepository
@@ -46,6 +48,11 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
             return basket;
         }
 
+        public Basket GetBasketById(int id)
+        {
+            return _context.Baskets.Find(id);
+        }
+
         public Basket GetBasketByProductAndToken(int productId, string token)
         {
             return _context.Baskets.SingleOrDefault(b => b.ProductId == productId && b.Token == token);
@@ -57,6 +64,13 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
                                    .Include("Product.Photos")
                                    .Where(b => b.Token == token)
                                    .ToList();
+        }
+
+        public void RemoveBasket(Basket basket)
+        {
+            _context.Baskets.Remove(basket);
+
+            _context.SaveChanges();
         }
 
         public void UpdateBasketsToken(string guestToken, string userToken)

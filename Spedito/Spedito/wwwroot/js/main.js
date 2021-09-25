@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+﻿jQuery(document).ready(function ($) {
     $(window).on('load', function () {
         setTimeout(function () {
             $('.preloader').fadeOut().end().delay(500).fadeOut('slow');
@@ -48,6 +48,22 @@ jQuery(document).ready(function ($) {
     $('.js-checkbox').on('click', function () {
         $(this).toggleClass('is-checked');
     });
+
+    if ($("remove-basket-item").length) {
+        $("remove-basket-item").click(function (e) {
+            e.preventDefault();
+
+            let elem = $(this);
+
+            $.ajax({
+                url: $(this).attr("href"),
+                type: "get",
+                success: function () {
+                    elem.parent().remove();
+                }
+            });
+        });
+    }
 
     
 

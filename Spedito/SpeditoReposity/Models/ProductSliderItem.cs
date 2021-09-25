@@ -20,10 +20,6 @@ namespace SpeditoReposity.Models
         [MaxLength(50)]
         public string ActionText { get; set; }
 
-        [Required]
-        [MaxLength(200)]
-        public string EndPoint { get; set; }
-
         public Product Product { get; set; }
     }
 }

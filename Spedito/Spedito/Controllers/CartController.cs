@@ -7,12 +7,12 @@ using System.Collections.Generic;
 
 namespace Spedito.Controllers
 {
-    public class BasketController : Controller
+    public class CartController : Controller
     {
         private readonly IMapper _mapper;
         private readonly IBasketRepository _basketRepository;
 
-        public BasketController(IMapper mapper,
+        public CartController(IMapper mapper,
                                 IBasketRepository basketRepository)
         {
             _mapper = mapper;
@@ -21,7 +21,13 @@ namespace Spedito.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            Request.Cookies.TryGetValue("token", out string token);
+
+            var basketItems = _basketRepository.GetBasketByToken(token);
+
+            var model = _mapper.Map<IEnumerable<Basket>, IEnumerable<BasketViewModel>>(basketItems);
+
+            return View(model);
         }
 
         public IActionResult Add(int id)
@@ -53,6 +59,25 @@ namespace Spedito.Controllers
             var basketModel = _mapper.Map<IEnumerable<Basket>, IEnumerable<BasketViewModel>>(basketItems);
 
             return View("Basket", basketModel);
+        }
+
+        public IActionResult Remove(int id)
+        {
+            var basket = _basketRepository.GetBasketById(id);
+
+            if (basket == null) return NotFound();
+
+            Request.Cookies.TryGetValue("token", out string token);
+
+            if (basket.Token != token) return NotFound();
+
+            _basketRepository.RemoveBasket(basket);
+
+            var basketItems = _basketRepository.GetBasketByToken(token);
+
+            var basketModel = _mapper.Map<IEnumerable<Basket>, IEnumerable<BasketViewModel>>(basketItems);
+
+            return View("Cart", basketModel);
         }
     }
 }

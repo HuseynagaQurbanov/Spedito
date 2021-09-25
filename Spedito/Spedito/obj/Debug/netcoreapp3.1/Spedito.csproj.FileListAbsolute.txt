@@ -473,7 +473,6 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.TagHelpers.input.cache
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.TagHelpers.output.cache
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Spedito.RazorCoreGenerate.cache
-C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
@@ -505,3 +504,4 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\Microsoft.Extensions.WebEncoders.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\Spedito\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
