@@ -1,8 +1,11 @@
-﻿using Admin.Models.Content;
+﻿using Admin.Libs;
+using Admin.Models.Content;
 using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SpeditoReposity.Models;
 using SpeditoReposity.Repositories.ContextRepositories;
+using SpeditoReposity.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +18,8 @@ namespace Admin.Controllers
         private SpeditoReposity.Models.Admin _admin => RouteData.Values["Admin"] as SpeditoReposity.Models.Admin;
         private readonly IMapper _mapper;
         private readonly IContentRepository _contentRepository;
+        private readonly ICloudinaryService _cloudinaryService;
+        private readonly IFileManager _fileManager;
 
         public StepController(IMapper mapper,
                                   IContentRepository catalogRepository)

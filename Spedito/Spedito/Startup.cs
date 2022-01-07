@@ -16,6 +16,7 @@ using SpeditoReposity.Repositories.ContextRepositories;
 using SpeditoReposity.Repositories.ShoppingReposities;
 using Microsoft.AspNetCore.Http;
 using Spedito.Libs;
+using SpeditoReposity.Repositories.SettingRepository;
 
 namespace Spedito
 {
@@ -49,6 +50,7 @@ namespace Spedito
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IBasketRepository, BasketRepository>();
             services.AddTransient<ICatalogRepository, CatalogRepository>();
+            services.AddTransient<ISettingRepository, SettingRepository>();
 
             // inner libs
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

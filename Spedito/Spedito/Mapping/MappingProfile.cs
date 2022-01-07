@@ -21,6 +21,7 @@ namespace Spedito.Mapping
             CreateMap<RegisterViewModel, User>();
             CreateMap<ProductReview, ReviewViewModel>();
             CreateMap<Basket, BasketViewModel>();
+            CreateMap<Setting, ContactViewModel>();
         }
     }
 }

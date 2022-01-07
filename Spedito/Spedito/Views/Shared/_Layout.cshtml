@@ -1,4 +1,5 @@
-﻿@inject IAuth _auth
+﻿@model ContactViewModel
+@inject IAuth _auth
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +39,7 @@
                         <div class="uk-navbar-left">
                             <button class="uk-button" type="button" data-target="#offcanvas" data-uk-toggle data-uk-icon="menu"></button>
                             <ul class="uk-navbar-nav">
-                                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                                <li><a asp-controller="home" asp-action="index" ></a></li>
                             </ul>
                         </div>
                         <div class="uk-navbar-center">
@@ -53,7 +54,7 @@
                         </div>
                         <div class="uk-navbar-right">
                             <ul class="uk-navbar-nav">
-                                <li><a asp-controller="contact" asp-action="index">Contact us</a></li>
+                                <li><a asp-controller="contact" asp-action="index" ></a></li>
                             </ul>
                         </div>
                     </nav>
@@ -66,7 +67,7 @@
                             <div>
                                 <div class="block-with-phone">
                                     <img src="~/img/delivery.svg" alt="Alternate Text" />
-                                    <div> <span>For Delivery, Call us</span><a href="tel:13205448749">1-320-544-8749</a></div>
+PM>                                     <div> <span>For Delivery, Call us</span><a href="tel:13205448749">077-766-55-95</a></div>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +121,7 @@
                         </div>
                         <div class="contact-item-box">
                             <div class="contact-item-box__title">Contact us</div>
-                            <div class="contact-item-box__value">Email: <a href="mailto:food@our-example.com">food@our-example.com</a><br> Phone: <a href="tel:3205448749">320-544-8749</a></div>
+                            <div class="contact-item-box__value">Email: <a href="mailto:food@our-example.com">food@our-example.com</a><br> Phone: <a href="tel:3205448749">077-766-55-95</a></div>
                         </div>
                     </div>
                 </div>
@@ -128,8 +129,8 @@
             <div class="page-footer__middle">
                 <div class="uk-container">
                     <ul class="uk-navbar-nav">
-                        <li><a asp-controller="home" asp-action="index">Home</a></li>
-                        <li><a asp-controller="contact" asp-action="index">Contact</a></li>
+                        @*<li><a asp-controller="home" asp-action="index">Home</a></li>
+                        <li><a asp-controller="contact" asp-action="index">Contact</a></li>*@
                     </ul>
                 </div>
             </div>

@@ -62,7 +62,9 @@
                         <div class="product-full-card__info" style="margin-top:30px">
                             <div class="product-full-card__price"> <span>Price: </span><span class="value">$@Model.Price</span></div>
                             <div class="product-full-card__btns">
-                                <a class="uk-button" href="#!">
+                                <a asp-controller="cart"
+                                   asp-action="add"
+                                   asp-route-id="@Model.Id" class="uk-button">
                                     Add to Cart<span data-uk-icon="cart">
                                     </span>
                                 </a>

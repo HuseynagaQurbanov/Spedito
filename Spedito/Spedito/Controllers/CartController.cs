@@ -58,7 +58,7 @@ namespace Spedito.Controllers
 
             var basketModel = _mapper.Map<IEnumerable<Basket>, IEnumerable<BasketViewModel>>(basketItems);
 
-            return View("Basket", basketModel);
+            return View("index", basketModel);
         }
 
         public IActionResult Remove(int id)
@@ -77,7 +77,7 @@ namespace Spedito.Controllers
 
             var basketModel = _mapper.Map<IEnumerable<Basket>, IEnumerable<BasketViewModel>>(basketItems);
 
-            return View("Cart", basketModel);
+            return View("index", basketModel);
         }
     }
 }
