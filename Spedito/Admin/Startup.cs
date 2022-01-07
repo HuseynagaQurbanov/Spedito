@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SpeditoReposity.Data;
 using SpeditoReposity.Repositories.AdminRepositories;
+using SpeditoReposity.Repositories.ContextRepositories;
 using SpeditoReposity.Repositories.ShoppingReposities;
 using SpeditoReposity.Services;
 
@@ -41,6 +42,7 @@ namespace Admin
             services.AddTransient<IAdminRepository, AdminRepository>();
             services.AddTransient<ICatalogRepository, CatalogRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IContentRepository, ContentRepository>();
 
 
             services.AddTransient<ICloudinaryService, CloudinaryService>();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bMO3LhI3kXToDzpIUYQO14JVc3MyDStoZCzEXSS8O5WZrfAzU8WzVKeXpOsoJD2kPZpIXSQPhWpb9bC9ToEcng==",
+  "dgSpecHash": "T3E7PAR+OCi0xxU5X3N4LDhVlaO/CzEksJea76Ecy3g+5syVcbHqwbeCGou2+CkXXB5/aLT6/4p42NXWn98JRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
+  "projectFilePath": "D:\\Unity Projects\\Turtle\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SOFT\\.nuget\\packages\\cloudinarydotnet\\1.15.2\\cloudinarydotnet.1.15.2.nupkg.sha512",
     "C:\\Users\\SOFT\\.nuget\\packages\\cryptohelper\\3.0.2\\cryptohelper.3.0.2.nupkg.sha512",

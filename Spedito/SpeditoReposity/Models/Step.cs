@@ -7,8 +7,7 @@ namespace SpeditoReposity.Models
 {
     public class Step : BaseEntity
     {
-        [Required]
-        [MaxLength(100)]
+        
         public string Image { get; set; }
 
         [Required]

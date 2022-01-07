@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fpTk7wWs930zfRrciOCJkMOL3Y3lI0g245qAs0bb+LPefmo0Fruf/7V8JX8J+DLH7mBnhv7J/fiwudUeALFBXQ==",
+  "dgSpecHash": "ypwdqtmWAVSdRl+HeFfPRzN9Ebt+qGS1vXxogts/hHe7suMFvSJfHFoAKSl4uyLyc3vptJOM1Ws0//JNeWSIOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\Admin\\Admin.csproj",
+  "projectFilePath": "D:\\Unity Projects\\Turtle\\Spedito\\Spedito\\Admin\\Admin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SOFT\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\SOFT\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

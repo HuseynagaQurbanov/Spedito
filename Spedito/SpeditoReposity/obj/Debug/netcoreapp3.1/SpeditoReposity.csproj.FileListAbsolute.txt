@@ -26,3 +26,13 @@ C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\SpeditoReposity\obj\Debug\net
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.csproj.CoreCompileInputs.cache
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.dll
 C:\Users\SOFT\Desktop\Work\WebApps\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.pdb
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.deps.json
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.dll
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\bin\Debug\netcoreapp3.1\SpeditoReposity.pdb
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.csproj.AssemblyReference.cache
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.AssemblyInfoInputs.cache
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.AssemblyInfo.cs
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.csproj.CoreCompileInputs.cache
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.dll
+D:\Unity Projects\Turtle\Spedito\Spedito\SpeditoReposity\obj\Debug\netcoreapp3.1\SpeditoReposity.pdb

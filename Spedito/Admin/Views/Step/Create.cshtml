@@ -1,0 +1,65 @@
+﻿@model StepViewModel
+
+@{
+    ViewData["Title"] = "New Step";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">New Step</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form method="post">
+                <div class="form-group">
+                    <label>Status</label>
+                    <div class="custom-control custom-radio custom-control-inline ml-3">
+                        <input type="radio" asp-for="Status" value="true" class="custom-control-input" checked="">
+                        <label class="custom-control-label" asp-for="Status">Active</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" asp-for="Status" value="false" class="custom-control-input">
+                        <label class="custom-control-label" asp-for="Status">Passive</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Steps">Step</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Steps">
+                    <span class="field-validation-valid" asp-validation-for="Steps"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Title">Title</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Title">
+                    <span class="field-validation-valid" asp-validation-for="Title"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Description">Description</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Description">
+                    <span class="field-validation-valid" asp-validation-for="Description"></span>
+                </div>
+
+                <div class="form-group d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text">Add</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+@section Scripts{
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

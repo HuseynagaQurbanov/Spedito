@@ -5536,11 +5536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
+      "projectUniqueName": "D:\\Unity Projects\\Turtle\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
       "projectName": "SpeditoReposity",
-      "projectPath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
+      "projectPath": "D:\\Unity Projects\\Turtle\\Spedito\\Spedito\\SpeditoReposity\\SpeditoReposity.csproj",
       "packagesPath": "C:\\Users\\SOFT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SOFT\\Desktop\\Work\\WebApps\\Spedito\\Spedito\\SpeditoReposity\\obj\\",
+      "outputPath": "D:\\Unity Projects\\Turtle\\Spedito\\Spedito\\SpeditoReposity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5601,7 +5601,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

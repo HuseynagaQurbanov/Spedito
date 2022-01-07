@@ -70,7 +70,7 @@
                         {
                             <div class="item">
                                 <input type="hidden" value="@i" name="Photos[@i].OrderBy" />
-                                <input type="hidden" asp-for="Photos[i].Image"/>
+                                <input type="hidden" asp-for="Photos[i].Image" />
                                 <img src="@_cloudinaryService.BuildUrl(Model.Photos[i].Image)" />
                                 <a href="#" data-name="@Model.Photos[i].Image" data-Id="@Model.Photos[i].Id" class="remove"><i class="fa fa-trash"></i></a>
                             </div>

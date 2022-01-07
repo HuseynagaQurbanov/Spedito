@@ -151,6 +151,8 @@ namespace SpeditoReposity.Repositories.ShoppingReposities
             productToUpdate.Name = product.Name;
             productToUpdate.Price = product.Price;
             productToUpdate.Text = product.Text;
+            productToUpdate.IsRecommended = product.IsRecommended;
+            productToUpdate.IsSpecialDeal = product.IsSpecialDeal;
             productToUpdate.Description = product.Description;
             productToUpdate.FoodCategoryId = product.FoodCategoryId;
             productToUpdate.ModifiedBy = product.ModifiedBy;

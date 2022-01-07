@@ -469,11 +469,6 @@ namespace SpeditoReposity.Migrations
                     b.Property<DateTime>("AddedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("EndPoint")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
-
                     b.Property<string>("Image")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
@@ -623,9 +618,7 @@ namespace SpeditoReposity.Migrations
                         .HasMaxLength(500);
 
                     b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)")
-                        .HasMaxLength(100);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(50)")
